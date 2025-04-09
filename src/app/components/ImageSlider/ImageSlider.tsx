@@ -22,12 +22,18 @@ const images = [
 //   sliderRef.slickPrev();
 // };
 
-function SampleNextArrow(props) {
+interface ArrowProps {
+  className?: string;
+  style?: React.CSSProperties;
+  onClick?: () => void;
+}
+
+function NextArrow(props: ArrowProps) {
   const { className, style, onClick } = props;
   return <div style={{ ...style, display: 'none' }} onClick={onClick} />;
 }
 
-function SamplePrevArrow(props) {
+function PrevArrow(props: ArrowProps) {
   const { className, style, onClick } = props;
   return <div style={{ ...style, display: 'none' }} onClick={onClick} />;
 }
@@ -50,8 +56,8 @@ const ImageSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
   return (
