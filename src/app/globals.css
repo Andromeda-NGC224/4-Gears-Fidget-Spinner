@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #2563eb;
+  --text-color-black: #000000;
+  --text-color-white: #ffffff;
+  --background-main-color: #ffffff;
+  --background-dark-color: #333333;
+  --firstblue-color: #94bfff;
+  --secondblue-color: #5390ec;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #ffffff;
+}
+button {
+  cursor: pointer;
+  border: none;
+}

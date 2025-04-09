@@ -1,0 +1,76 @@
+.footer {
+  background: linear-gradient(
+    135deg,
+    var(--firstblue-color),
+    var(--secondblue-color)
+  );
+  padding: 60px 16px 96px 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--text-color-white);
+  width: 202px;
+  height: 60px;
+}
+
+.logo {
+  height: 38px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.slogan {
+  font-size: 15px;
+  height: 13px;
+}
+
+.linksColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  color: var(--text-color-white);
+}
+
+.linksTitle {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.linksList {
+  font-weight: 500;
+  font-size: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.linksList li {
+  cursor: pointer;
+}
+
+.linksList li:hover {
+  color: #2563eb;
+}
+
+.orderButton {
+  align-self: flex-start;
+  padding: 22px 48px;
+  background: var(-text-color-white);
+  color: var(--secondblue-color);
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+}

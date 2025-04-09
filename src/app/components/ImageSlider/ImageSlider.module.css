@@ -1,0 +1,15 @@
+.sliderContainer {
+  width: 328px;
+  height: 328px;
+  margin: 0 auto 32px auto;
+}
+
+.imageWrapper {
+  border-radius: 10.77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-dots li.slick-active {
+  color: #000;
+}
