@@ -40,18 +40,9 @@ function PrevArrow(props: ArrowProps) {
 
 const ImageSlider = () => {
   const settings = {
-    customPaging: () => (
-      <div
-        style={{
-          width: '20px',
-          height: '10px',
-          background: '#cddbe3',
-          borderRadius: '12.42px',
-        }}
-      ></div>
-    ),
+    customPaging: () => <div className={css.paging}></div>,
     dots: true,
-    dotsClass: 'slick-dots',
+    dotsClass: `slick-dots`,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

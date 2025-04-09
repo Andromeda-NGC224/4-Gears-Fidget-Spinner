@@ -1,7 +1,8 @@
 import React from 'react';
 
+import { IoCheckmarkCircleSharp } from 'react-icons/io5';
+import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import css from './GeometrySection.module.css';
-import ImageSlider from '../ImageSlider/ImageSlider';
 
 export default function GeometrySection() {
   return (
@@ -15,7 +16,6 @@ export default function GeometrySection() {
 
       <div className={css.content}>
         <ImageSlider />
-
         <p className={css.description}>
           Уявіть: доки ваш малюк захоплено грається з яскравими геометричними
           фігурами, його мозок проходить інтенсивне тренування! Кожне торкання
@@ -24,27 +24,45 @@ export default function GeometrySection() {
 
         <ul className={css.featuresList}>
           <li className={css.featureItem}>
-            <span className={css.checkbox}></span>
-            Логічне мислення через сортування форм і кольорів
+            <IoCheckmarkCircleSharp
+              style={{ minWidth: 24, minHeight: 24 }}
+              size={24}
+              color="#5EDD60"
+            />
+            <span>Логічне мислення через сортування форм і кольорів</span>
           </li>
           <li className={css.featureItem}>
-            <span className={css.checkbox}></span>
-            Просторове сприйняття через роботу з розмірами
+            <IoCheckmarkCircleSharp
+              style={{ minWidth: 24, minHeight: 24 }}
+              size={24}
+              color="#5EDD60"
+            />
+            <span>Просторове сприйняття через роботу з розмірами</span>
           </li>
           <li className={css.featureItem}>
-            <span className={css.checkbox}></span>
-            Дрібну моторику через точні рухи
+            <IoCheckmarkCircleSharp
+              style={{ minWidth: 24, minHeight: 24 }}
+              size={24}
+              color="#5EDD60"
+            />
+            <span>Дрібну моторику через точні рухи</span>
           </li>
           <li className={css.featureItem}>
-            <span className={css.checkbox}></span>
-            Увагу та пам'ять через послідовні дії
+            <IoCheckmarkCircleSharp
+              style={{ minWidth: 24, minHeight: 24 }}
+              size={24}
+              color="#5EDD60"
+            />
+            <span>Увагу та пам'ять через послідовні дії</span>
           </li>
         </ul>
       </div>
 
       <div className={css.actions}>
-        <span className={css.price}>700₴</span>
-        <span className={css.oldPrice}>420₴</span>
+        <div className={css.priceContainer}>
+          <span className={css.price}>700₴</span>
+          <span className={css.oldPrice}>420₴</span>
+        </div>
         <button className={css.orderButton}>Замовити</button>
       </div>
     </section>

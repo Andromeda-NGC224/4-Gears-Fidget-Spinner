@@ -1,0 +1,86 @@
+.section {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 96px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+  color: var(--text-color-blue);
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.image {
+  border-radius: 16px;
+}
+
+.stepsList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.step {
+  color: var(--text-color-blue);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.icon {
+  color: var(--secondblue-color);
+  flex-shrink: 0;
+}
+
+.stepTitle {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.stepDesc {
+  font-size: 16px;
+  font-weight: 500;
+}
+.titleSecond {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-color-blue);
+}
+.orderButton {
+  margin: 0 auto;
+  padding: 20.5px 25px;
+  background: linear-gradient(
+    to bottom,
+    var(--firstblue-color),
+    var(--secondblue-color)
+  );
+  color: var(--text-color-white);
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.orderButton:hover {
+  background: linear-gradient(135deg, #a8c9ff 0%, #639cf2 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(83, 144, 236, 0.3);
+}

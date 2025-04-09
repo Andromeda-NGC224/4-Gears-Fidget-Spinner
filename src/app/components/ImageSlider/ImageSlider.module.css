@@ -1,7 +1,12 @@
+:global(.slick-dots li.slick-active) .paging {
+  background: #404969;
+}
+
 .sliderContainer {
   width: 328px;
   height: 328px;
   margin: 0 auto 32px auto;
+  box-sizing: content-box;
 }
 
 .imageWrapper {
@@ -10,6 +15,9 @@
   justify-content: center;
   align-items: center;
 }
-.slick-dots li.slick-active {
-  color: #000;
+.paging {
+  width: 20px;
+  height: 10px;
+  background: #cddbe3;
+  border-radius: 12.42px;
 }
