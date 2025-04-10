@@ -3,8 +3,17 @@ import React from 'react';
 import { IoCheckmarkCircleSharp } from 'react-icons/io5';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import css from './GeometrySection.module.css';
+import OrderBtn from '@/app/components/OrderBtn/OrderBtn';
 
 export default function GeometrySection() {
+  const images = [
+    '/images/GeometrySectionImg.png',
+    '/images/GeometrySectionImg.png',
+    '/images/GeometrySectionImg.png',
+    '/images/GeometrySectionImg.png',
+    '/images/GeometrySectionImg.png',
+  ];
+
   return (
     <section className={css.section}>
       <h2 className={css.title}>
@@ -15,7 +24,7 @@ export default function GeometrySection() {
       </h3>
 
       <div className={css.content}>
-        <ImageSlider />
+        <ImageSlider images={images} width={328} height={328} />
         <p className={css.description}>
           Уявіть: доки ваш малюк захоплено грається з яскравими геометричними
           фігурами, його мозок проходить інтенсивне тренування! Кожне торкання
@@ -63,7 +72,7 @@ export default function GeometrySection() {
           <span className={css.price}>700₴</span>
           <span className={css.oldPrice}>420₴</span>
         </div>
-        <button className={css.orderButton}>Замовити</button>
+        <OrderBtn />
       </div>
     </section>
   );

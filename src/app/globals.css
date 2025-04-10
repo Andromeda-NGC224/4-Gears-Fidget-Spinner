@@ -20,6 +20,7 @@ body {
 button {
   cursor: pointer;
   border: none;
+  font-family: inherit;
 }
 h1,
 h2,
@@ -28,8 +29,11 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+a {
   margin: 0;
   padding: 0;
   list-style: none;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
 }

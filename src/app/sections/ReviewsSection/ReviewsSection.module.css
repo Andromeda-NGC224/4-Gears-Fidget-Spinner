@@ -1,0 +1,21 @@
+.section {
+  padding: 0 17.5px 0 17.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 78px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 48px;
+  color: #222;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}

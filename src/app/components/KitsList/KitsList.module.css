@@ -15,6 +15,10 @@
   border: 1px solid #dfdfdf;
   border-radius: 32px;
 }
+
+.kitItem p {
+  line-height: 1.55;
+}
 .kitImageWrapper {
   display: flex;
   gap: 16px;

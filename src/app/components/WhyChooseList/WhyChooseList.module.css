@@ -1,0 +1,31 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0 0 32px 0;
+  list-style: none;
+}
+
+.item {
+  box-shadow: 0 12px 12px rgba(124, 122, 151, 0.1);
+  border-radius: 24px;
+  padding: 24px 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 144px;
+  height: 144px;
+}
+
+.text {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-color-black);
+}

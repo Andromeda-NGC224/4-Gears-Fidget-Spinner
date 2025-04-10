@@ -1,0 +1,22 @@
+.orderButton {
+  margin: 0 auto;
+  padding: 20.5px 25px;
+  background: linear-gradient(
+    to bottom,
+    var(--firstblue-color),
+    var(--secondblue-color)
+  );
+  color: var(--text-color-white);
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.orderButton:hover {
+  background: linear-gradient(135deg, #a8c9ff 0%, #639cf2 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(83, 144, 236, 0.3);
+}

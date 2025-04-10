@@ -1,10 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import css from './StepsToDevelopSection.module.css';
-import { FaArrowRight } from 'react-icons/fa';
 import { IoIosArrowDroprightCircle } from 'react-icons/io';
 import KitsList from '@/app/components/KitsList/KitsList';
+
+import css from './StepsToDevelopSection.module.css';
+import OrderBtn from '@/app/components/OrderBtn/OrderBtn';
 
 const steps = [
   {
@@ -76,7 +77,7 @@ const StepsToDevelopSection = () => {
       </ul>
       <h2 className={css.titleSecond}>Що входить до набору</h2>
       <KitsList />
-      <button className={css.orderButton}>Замовити</button>
+      <OrderBtn style={{ paddingLeft: 48, paddingRight: 48 }} />
     </section>
   );
 };

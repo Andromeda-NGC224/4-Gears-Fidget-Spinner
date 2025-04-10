@@ -2,43 +2,43 @@
 
 import Slider from 'react-slick';
 import Image from 'next/image';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import {
+  IoIosArrowDroprightCircle,
+  IoIosArrowDropleftCircle,
+} from 'react-icons/io';
+
 import css from './ImageSlider.module.css';
-import { useRef } from 'react';
 
-const images = [
-  '/images/GeometrySectionImg.png',
-  '/images/GeometrySectionImg.png',
-  '/images/GeometrySectionImg.png',
-  '/images/GeometrySectionImg.png',
-  '/images/GeometrySectionImg.png',
-];
-
-// let sliderRef = useRef(null);
-// const next = () => {
-//   sliderRef.slickNext();
-// };
-// const previous = () => {
-//   sliderRef.slickPrev();
-// };
+interface ImageSliderProps {
+  images: string[];
+  style?: React.CSSProperties;
+  width: number;
+  height: number;
+}
 
 interface ArrowProps {
-  className?: string;
-  style?: React.CSSProperties;
   onClick?: () => void;
 }
 
 function NextArrow(props: ArrowProps) {
-  const { className, style, onClick } = props;
-  return <div style={{ ...style, display: 'none' }} onClick={onClick} />;
+  const { onClick } = props;
+  return (
+    <div className={css.nextArrow} onClick={onClick}>
+      <IoIosArrowDroprightCircle size={45} />
+    </div>
+  );
 }
 
 function PrevArrow(props: ArrowProps) {
-  const { className, style, onClick } = props;
-  return <div style={{ ...style, display: 'none' }} onClick={onClick} />;
+  const { onClick } = props;
+  return (
+    <div className={css.prevArrow} onClick={onClick}>
+      <IoIosArrowDropleftCircle size={45} />
+    </div>
+  );
 }
 
-const ImageSlider = () => {
+const ImageSlider = ({ images, style, width, height }: ImageSliderProps) => {
   const settings = {
     customPaging: () => <div className={css.paging}></div>,
     dots: true,
@@ -52,20 +52,28 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className={css.sliderContainer}>
+    <div style={style} className={css.sliderContainer}>
       <Slider {...settings}>
         {images.map((src, index) => (
           <Image
             key={index}
             src={src}
             alt={`Слайд ${index + 1}`}
-            width={328}
-            height={328}
+            width={width}
+            height={height}
             className={css.image}
             priority
           />
         ))}
       </Slider>
+      {/* <div style={{ textAlign: 'center' }}>
+        <button className={css.sliderBtn} onClick={previous}>
+          Previous
+        </button>
+        <button className={css.sliderBtn} onClick={next}>
+          Next
+        </button>
+      </div> */}
     </div>
   );
 };
