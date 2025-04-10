@@ -1,21 +1,21 @@
 .section {
-  padding: 0 17.5px 60px 17.5px;
+  padding: 0 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 48px;
+  gap: 60px;
+  margin-bottom: 64px;
 }
 
 .title {
-  text-align: center;
   font-size: 32px;
-  margin-bottom: 60px;
   color: var(--text-color-blue);
+  font-weight: 700;
 }
 
-.list {
+.faqList {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 40px;
+  width: 332px;
 }

@@ -10,6 +10,7 @@ import {
 import css from './ImageSlider.module.css';
 
 interface ImageSliderProps {
+  className?: string;
   images: string[];
   style?: React.CSSProperties;
   width: number;
@@ -38,7 +39,13 @@ function PrevArrow(props: ArrowProps) {
   );
 }
 
-const ImageSlider = ({ images, style, width, height }: ImageSliderProps) => {
+const ImageSlider = ({
+  images,
+  style,
+  width,
+  height,
+  className,
+}: ImageSliderProps) => {
   const settings = {
     customPaging: () => <div className={css.paging}></div>,
     dots: true,
@@ -52,7 +59,7 @@ const ImageSlider = ({ images, style, width, height }: ImageSliderProps) => {
   };
 
   return (
-    <div style={style} className={css.sliderContainer}>
+    <div style={style} className={`${css.sliderContainer} ${className || ''}`}>
       <Slider {...settings}>
         {images.map((src, index) => (
           <Image
@@ -66,14 +73,6 @@ const ImageSlider = ({ images, style, width, height }: ImageSliderProps) => {
           />
         ))}
       </Slider>
-      {/* <div style={{ textAlign: 'center' }}>
-        <button className={css.sliderBtn} onClick={previous}>
-          Previous
-        </button>
-        <button className={css.sliderBtn} onClick={next}>
-          Next
-        </button>
-      </div> */}
     </div>
   );
 };

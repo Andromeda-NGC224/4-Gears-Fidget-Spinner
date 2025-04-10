@@ -7,7 +7,7 @@ import OrderBtn from '@/app/components/OrderBtn/OrderBtn';
 
 const HowItWorkSection = () => {
   return (
-    <section className={css.section}>
+    <section id="how-it-work" className={css.section}>
       <h2 className={css.title}>Комплексний розвиток через гру</h2>
       <p className={css.subtitle}>
         Кожне заняття — це маленьке відкриття!

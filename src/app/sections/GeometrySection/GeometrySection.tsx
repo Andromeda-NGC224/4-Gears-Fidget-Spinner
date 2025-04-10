@@ -16,15 +16,19 @@ export default function GeometrySection() {
 
   return (
     <section className={css.section}>
-      <h2 className={css.title}>
-        FlexiFun Geometry - Перші кроки у світ логіки
-      </h2>
-      <h3 className={css.subtitle}>
-        Розвивальний набір для дітей від 1 до 3 років
-      </h3>
-
       <div className={css.content}>
-        <ImageSlider images={images} width={328} height={328} />
+        <h2 className={css.title}>
+          FlexiFun Geometry - Перші кроки у світ логіки
+        </h2>
+        <h3 className={css.subtitle}>
+          Розвивальний набір для дітей від 1 до 3 років
+        </h3>
+        <ImageSlider
+          className={css.sliderLowWidth}
+          images={images}
+          width={328}
+          height={328}
+        />
         <p className={css.description}>
           Уявіть: доки ваш малюк захоплено грається з яскравими геометричними
           фігурами, його мозок проходить інтенсивне тренування! Кожне торкання
@@ -65,15 +69,21 @@ export default function GeometrySection() {
             <span>Увагу та пам'ять через послідовні дії</span>
           </li>
         </ul>
+        <div className={css.actions}>
+          <div className={css.priceContainer}>
+            <span className={css.price}>700₴</span>
+            <span className={css.oldPrice}>420₴</span>
+          </div>
+          <OrderBtn />
+        </div>
       </div>
 
-      <div className={css.actions}>
-        <div className={css.priceContainer}>
-          <span className={css.price}>700₴</span>
-          <span className={css.oldPrice}>420₴</span>
-        </div>
-        <OrderBtn />
-      </div>
+      <ImageSlider
+        className={css.sliderHighWidth}
+        images={images}
+        width={328}
+        height={328}
+      />
     </section>
   );
 }

@@ -1,0 +1,64 @@
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  padding: 24px 24px 24px 16px;
+}
+
+.buttonCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.number {
+  min-width: 48px;
+  min-height: 48px;
+  font-size: 32px;
+  font-weight: 500;
+  border: 2px solid var(--text-color-blue);
+  color: var(--text-color-blue);
+  border-radius: 27px;
+  margin-right: 14px;
+  align-self: start;
+}
+.question {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1.3;
+  color: var(--text-color-blue);
+}
+
+.icon {
+  min-width: 24px;
+  min-height: 24px;
+  color: var(--text-color-blue)
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.answer {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--text-color-blue);
+  margin-top: 16px;
+}
+
+.active .content {
+  max-height: 500px;
+}

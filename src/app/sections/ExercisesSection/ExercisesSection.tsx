@@ -37,7 +37,7 @@ const ExercisesSection = () => {
   ];
 
   return (
-    <section className={css.section}>
+    <section id="exercises" className={css.section}>
       <div className={css.card}>
         <div className={css.sliderWrapper}>
           <ImageSlider images={sliderImages} width={288} height={288} />

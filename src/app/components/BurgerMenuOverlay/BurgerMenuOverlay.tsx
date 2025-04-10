@@ -4,6 +4,8 @@ import React from 'react';
 import { TfiClose } from 'react-icons/tfi';
 import Link from 'next/link';
 import css from './BurgerMenuOverlay.module.css';
+import SmoothScrollLink from '../SmoothScrollLink/SmoothScrollLink';
+import OrderBtn from '../OrderBtn/OrderBtn';
 
 interface Props {
   onClose: () => void;
@@ -23,12 +25,20 @@ const BurgerMenuOverlay = ({ onClose }: Props) => {
       </div>
 
       <div className={css.linksColumn}>
-        <ul className={css.linksList}>
-          <li>Що розвиває набір</li>
-          <li>Спеціальні вправи</li>
-          <li>Як це працює</li>
-          <li>Відгуки</li>
-        </ul>
+        <nav className={css.linksList}>
+          <SmoothScrollLink targetId="steps-to-develop" onClick={onClose}>
+            Що розвиває набір
+          </SmoothScrollLink>
+          <SmoothScrollLink targetId="exercises" onClick={onClose}>
+            Спеціальні вправи
+          </SmoothScrollLink>
+          <SmoothScrollLink targetId="how-it-work" onClick={onClose}>
+            Як це працює
+          </SmoothScrollLink>
+          <SmoothScrollLink targetId="reviews" onClick={onClose}>
+            Відгуки
+          </SmoothScrollLink>
+        </nav>
       </div>
 
       <div className={css.linksColumn}>
@@ -37,7 +47,14 @@ const BurgerMenuOverlay = ({ onClose }: Props) => {
         </ul>
       </div>
 
-      <button className={css.orderButton}>Замовити</button>
+      <OrderBtn
+        style={{
+          color: '#5390ec',
+          padding: '18px 40px',
+          background: '#ffffff',
+          alignSelf: 'flex-start',
+        }}
+      />
     </div>
   );
 };

@@ -29,11 +29,15 @@ h4,
 h5,
 h6,
 p,
-ul,
-a {
+ul {
+  text-decoration: none;
   margin: 0;
   padding: 0;
   list-style: none;
   line-height: 1.25;
   letter-spacing: 0.02em;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }

@@ -44,7 +44,7 @@ const kits = [
 
 const StepsToDevelopSection = () => {
   return (
-    <section className={css.section}>
+    <section id="steps-to-develop" className={css.section}>
       <h2 className={css.title}>
         3 простих кроки
         <br />

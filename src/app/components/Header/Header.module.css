@@ -32,6 +32,7 @@
 
 .buttonsContainer {
   display: flex;
+  align-items: center;
   gap: 14px;
 }
 
@@ -69,4 +70,43 @@
   );
   border-radius: 12px;
   cursor: pointer;
+}
+.hideOnSmallScreen {
+  display: none;
+}
+
+.linksList {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 35px 0;
+  }
+  .burgerMenu {
+    display: none;
+  }
+  .hideOnSmallScreen {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .linksList {
+    display: flex;
+    gap: 32px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color-blue);
+  }
+  .logoContainer {
+    width: 220px;
+    height: 64px;
+  }
+  .logoText {
+    font-size: 42px;
+  }
+  .slogan {
+    font-size: 16px;
+  }
 }

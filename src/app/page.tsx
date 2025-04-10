@@ -4,6 +4,7 @@ import StepsToDevelopSection from './sections/StepsToDevelopSection/StepsToDevel
 import HowItWorkSection from './sections/HowItWorkSection/HowItWorkSection';
 import ExercisesSection from './sections/ExercisesSection/ExercisesSection';
 import ReviewsSection from './sections/ReviewsSection/ReviewsSection';
+import FaqSection from './sections/FaqSection/FaqSection';
 import Footer from './components/Footer/Footer';
 
 import 'slick-carousel/slick/slick.css';
@@ -18,6 +19,7 @@ export default function Home() {
       <HowItWorkSection />
       <ExercisesSection />
       <ReviewsSection />
+      <FaqSection />
       <Footer />
     </main>
   );

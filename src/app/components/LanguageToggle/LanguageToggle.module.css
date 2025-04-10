@@ -50,3 +50,22 @@
 .slideRight {
   transform: translateX(100%);
 }
+
+@media screen and (min-width: 1440px) {
+  .toggleContainer {
+    width: 187px;
+    height: 42px;
+  }
+  .toggleButton {
+    width: 87px;
+    height: 60px;
+    font-size: 20px;
+  }
+  .toggleBackground {
+    border-radius: 20px;
+    height: 64px;
+  }
+  .slider {
+    border-radius: 20px;
+  }
+}

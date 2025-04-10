@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './Footer.module.css';
+import SmoothScrollLink from '../SmoothScrollLink/SmoothScrollLink';
 
 export default function Footer() {
   return (
@@ -11,13 +12,19 @@ export default function Footer() {
         </div>
 
         <div className={css.linksColumn}>
-          <ul className={css.linksList}>
+          <nav className={css.linksList}>
             <li className={css.linksTitle}>FlexiFun Geometry</li>
-            <li>Що розвиває набір</li>
-            <li>Спеціальні вправи</li>
-            <li>Як це працює</li>
-            <li>Відгуки</li>
-          </ul>
+            <SmoothScrollLink targetId="steps-to-develop">
+              Що розвиває набір
+            </SmoothScrollLink>
+            <SmoothScrollLink targetId="exercises">
+              Спеціальні вправи
+            </SmoothScrollLink>
+            <SmoothScrollLink targetId="how-it-work">
+              Як це працює
+            </SmoothScrollLink>
+            <SmoothScrollLink targetId="reviews">Відгуки</SmoothScrollLink>
+          </nav>
         </div>
 
         <div className={css.linksColumn}>
