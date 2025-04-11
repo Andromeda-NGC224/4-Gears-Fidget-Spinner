@@ -21,28 +21,38 @@
   margin-bottom: 32px;
 }
 
-.image {
+.imageLowWidth {
   border-radius: 16px;
 }
+.imageHighWidth {
+  border-radius: 16px;
+  display: none;
+}
 
-.stepsList {
+.stepsListLowWidth {
   display: flex;
   flex-direction: column;
-  gap: 24px;
   width: 328px;
 }
 
+.stepsListHighWidth {
+  display: none;
+}
 .step {
   color: var(--text-color-blue);
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .icon {
   color: var(--secondblue-color);
   flex-shrink: 0;
+}
+.iconSvg {
+  width: 24px;
+  height: 24px;
 }
 
 .stepTitle {
@@ -61,4 +71,60 @@
   text-align: center;
   margin-bottom: 40px;
   color: var(--text-color-blue);
+}
+.orderButton {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    width: 1408px;
+    padding: 0;
+    margin: 150px auto;
+  }
+  .title {
+    font-size: 64px;
+    margin-bottom: 80px;
+  }
+  .titleTransfer {
+    display: none;
+  }
+  .firstPartContainer {
+    display: flex;
+    gap: 136px;
+  }
+  .imageLowWidth {
+    display: none;
+  }
+  .imageHighWidth {
+    display: block;
+  }
+  .stepsListHighWidth {
+    display: flex;
+    flex-direction: column;
+    width: 576px;
+  }
+  .iconSvg {
+    width: 32px;
+    height: 32px;
+  }
+  .stepTitle {
+    font-size: 32px;
+  }
+  .stepDesc {
+    font-size: 18px;
+    list-style: disc;
+    margin-left: 20px;
+  }
+  .stepsListLowWidth {
+    display: none;
+  }
+  .titleSecond {
+    margin-bottom: 32px;
+  }
+  .orderButton {
+    padding: 24px 96px;
+    font-size: 24px;
+  }
 }

@@ -23,6 +23,10 @@ export default function GeometrySection() {
         <h3 className={css.subtitle}>
           Розвивальний набір для дітей від 1 до 3 років
         </h3>
+        <h3 className={css.subtitleHighWidth}>
+          Розвивальний набір для дітей від 1 до 3 років з інтерактивним
+          онлайн-тренажером
+        </h3>
         <ImageSlider
           className={css.sliderLowWidth}
           images={images}
@@ -70,19 +74,20 @@ export default function GeometrySection() {
           </li>
         </ul>
         <div className={css.actions}>
+          <OrderBtn className={css.orderButtonHighWidth} />
           <div className={css.priceContainer}>
             <span className={css.price}>700₴</span>
             <span className={css.oldPrice}>420₴</span>
           </div>
-          <OrderBtn />
+          <OrderBtn className={css.orderButtonLowWidth} />
         </div>
       </div>
 
       <ImageSlider
         className={css.sliderHighWidth}
         images={images}
-        width={328}
-        height={328}
+        width={644}
+        height={581}
       />
     </section>
   );

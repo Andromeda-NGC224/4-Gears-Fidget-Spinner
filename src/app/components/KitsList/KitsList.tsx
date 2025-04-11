@@ -6,7 +6,7 @@ const KitsList = () => {
   return (
     <ul className={css.kitsList}>
       <li className={css.kitItem}>
-        <p className={css.kitDescription}>
+        <p className={css.kitDescriptionLowWidth}>
           Геометричні фігури FlexiFun Geometry і дошка Basic Board для розвитку
           моторики та логіки
         </p>
@@ -16,7 +16,7 @@ const KitsList = () => {
             alt="Зображення з набору"
             width={280}
             height={130}
-            className={css.kitImage}
+            className={css.kitImageLowWidth}
             priority
           />
           <Image
@@ -24,10 +24,30 @@ const KitsList = () => {
             alt="Зображення з набору"
             width={280}
             height={130}
-            className={css.kitImage}
+            className={css.kitImageLowWidth}
+            priority
+          />
+          <Image
+            src="/images/image110.png"
+            alt="Зображення з набору"
+            width={227}
+            height={227}
+            className={css.kitImageHighWidth}
+            priority
+          />
+          <Image
+            src="/images/Group162910.png"
+            alt="Зображення з набору"
+            width={227}
+            height={227}
+            className={css.kitImageHighWidth}
             priority
           />
         </div>
+        <p className={css.kitDescriptionHighWidth}>
+          Геометричні фігури FlexiFun Geometry і дошка Basic Board для розвитку
+          моторики та логіки
+        </p>
       </li>
 
       <li className={css.kitItem}>
@@ -40,14 +60,22 @@ const KitsList = () => {
             alt="Зображення з набору"
             width={280}
             height={130}
-            className={css.kitImage}
+            className={css.kitImageLowWidth}
+            priority
+          />
+          <Image
+            src="/images/Frame1000002924.png"
+            alt="Зображення з набору"
+            width={555}
+            height={256}
+            className={css.kitImageHighWidth}
             priority
           />
         </div>
       </li>
 
-      <li className={css.kitItem}>
-        <p className={css.kitDescription}>
+      <li className={css.kitLastItem}>
+        <p className={css.kitDescriptionLowWidth}>
           Доступ до спеціально розроблених вправ та онлайн тренажеру через
           QR-код
         </p>
@@ -77,6 +105,10 @@ const KitsList = () => {
             priority
           />
         </div>
+        <p className={css.kitDescriptionHighWidth}>
+          Доступ до спеціально розроблених вправ та онлайн тренажеру через
+          QR-код
+        </p>
       </li>
     </ul>
   );

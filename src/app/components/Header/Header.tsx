@@ -6,7 +6,7 @@ import LanguageToggle from '../LanguageToggle/LanguageToggle';
 import BurgerMenuOverlay from '../BurgerMenuOverlay/BurgerMenuOverlay';
 
 import css from './Header.module.css';
-import OrderBtn from '../OrderBtn/OrderBtn';
+import OrderBtn from '@/app/components/OrderBtn/OrderBtn';
 import SmoothScrollLink from '../SmoothScrollLink/SmoothScrollLink';
 
 export interface HeaderProps {

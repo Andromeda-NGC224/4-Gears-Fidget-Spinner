@@ -1,4 +1,3 @@
-// components/HowItWorkSection/HowItWorkCard.tsx
 import css from './HowItWorkCard.module.css';
 import Image from 'next/image';
 import { IoIosArrowDroprightCircle } from 'react-icons/io';

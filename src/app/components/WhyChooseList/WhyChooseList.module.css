@@ -29,3 +29,24 @@
   font-weight: 400;
   color: var(--text-color-black);
 }
+@media screen and (min-width: 1440px) {
+  .list {
+    flex-direction: row;
+    margin: 0 0 60px 0;
+  }
+  .item {
+    width: 456px;
+    height: 427px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  .imageWrapper {
+    position: relative;
+    width: 215px;
+    height: 215px;
+  }
+  .text {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--text-color-blue);
+  }
+}

@@ -3,7 +3,7 @@ import ReviewCard from '@/app/components/ReviewCard/ReviewCard';
 
 import css from './ReviewsSection.module.css';
 import OrderBtn from '@/app/components/OrderBtn/OrderBtn';
-import ReviewsLoaderBtn from '@/app/components/ReviewsLoaderBtn/ReviewsLoaderBtn';
+import LoaderBtn from '@/app/components/LoaderBtn/LoaderBtn';
 
 const ReviewsSection = () => {
   const reviews = [
@@ -30,14 +30,14 @@ const ReviewsSection = () => {
   return (
     <section id="reviews" className={css.section}>
       <h2 className={css.title}>Відгуки</h2>
-      <ReviewsLoaderBtn />
+      <LoaderBtn className={css.loaderBtn} />
       <ul className={css.list}>
         {reviews.map((review, index) => (
           <ReviewCard key={index} {...review} />
         ))}
       </ul>
 
-      <OrderBtn style={{ paddingLeft: 48, paddingRight: 48 }} />
+      <OrderBtn className={css.orderButton} />
     </section>
   );
 };

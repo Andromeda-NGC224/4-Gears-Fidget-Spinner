@@ -19,3 +19,37 @@
   gap: 16px;
   margin-bottom: 40px;
 }
+.loaderBtn {
+  display: flex;
+}
+
+.orderButton {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+@media screen and (min-width: 1440px) {
+  .section {
+    background-color: rgba(213, 238, 255, 0.3);
+    padding: 150px 0px 120px 0px;
+    margin-bottom: 150px;
+  }
+
+  .title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 80px;
+  }
+  .loaderBtn {
+    display: none;
+  }
+
+  .list {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  .orderButton {
+    padding: 24px 96px;
+    font-size: 24px;
+  }
+}

@@ -5,13 +5,14 @@ import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
 } from 'react-icons/io';
-import css from './ReviewsLoaderBtn.module.css';
+import css from './LoaderBtn.module.css';
 
-interface ReviewsLoaderBtnProps {
+interface LoaderBtn {
   pages?: number;
+  className?: string;
 }
 
-const ReviewsLoaderBtn = ({ pages = 5 }: ReviewsLoaderBtnProps) => {
+const LoaderBtn = ({ pages = 5, className }: LoaderBtn) => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const handlePrev = () => {
@@ -23,7 +24,7 @@ const ReviewsLoaderBtn = ({ pages = 5 }: ReviewsLoaderBtnProps) => {
   };
 
   return (
-    <div className={css.btnContainer}>
+    <div className={`${css.btnContainer} ${className || ''}`}>
       <button
         className={css.prevArrow}
         onClick={handlePrev}
@@ -58,4 +59,4 @@ const ReviewsLoaderBtn = ({ pages = 5 }: ReviewsLoaderBtnProps) => {
   );
 };
 
-export default ReviewsLoaderBtn;
+export default LoaderBtn;

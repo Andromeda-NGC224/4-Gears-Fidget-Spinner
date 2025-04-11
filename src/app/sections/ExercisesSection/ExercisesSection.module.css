@@ -14,12 +14,15 @@
   align-items: center;
 }
 
-.sliderWrapper {
-  width: 100%;
+.sliderWrapperLowWidth {
+  width: 328px;
   padding: 20px;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   background-color: rgba(150, 150, 147, 0.4);
+}
+.sliderWrapperHighWidth {
+  display: none;
 }
 
 .textBlock {
@@ -59,4 +62,97 @@
   font-size: 32px;
   margin-bottom: 60px;
   text-align: center;
+}
+
+.loaderBtn {
+  display: none;
+}
+.WhyChooseBreak {
+  display: block;
+}
+.orderButton {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+@media screen and (min-width: 1440px) {
+  .section {
+    width: 1408px;
+    padding: 0;
+    margin: 150px auto;
+  }
+  .card {
+    width: 1408px;
+    height: 913px;
+    flex-direction: row;
+  }
+  .sliderWrapper {
+    width: 717px;
+    height: 100%;
+    border-radius: 40px 0px 0px 40px;
+  }
+  .textBlock {
+    width: 697px;
+    height: 100%;
+    border-radius: 0px 40px 40px 0px;
+    padding: 40px 61px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sliderWrapperLowWidth {
+    display: none;
+  }
+  .sliderWrapperHighWidth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #969693;
+    min-width: 717px;
+    height: 100%;
+    border-radius: 40px 0px 0px 40px;
+  }
+  .title {
+    font-size: 36px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 15px;
+    line-height: 1.7;
+  }
+  .orderButton {
+    padding: 24px 96px;
+    font-size: 24px;
+  }
+  .loaderBtn {
+    display: flex;
+    margin-bottom: 0;
+    background: none;
+    padding: 0;
+  }
+  .buttonsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+  .WhyChooseContainer {
+    width: 1410px;
+    margin-top: 150px;
+    align-items: center;
+    padding: 0;
+  }
+  .WhyChooseTitle {
+    font-size: 40px;
+    color: var(--text-color-black);
+    margin-bottom: 100px;
+  }
+  .WhyChooseBreak {
+    display: none;
+  }
+  .orderButton {
+    padding: 24px 96px;
+    font-size: 24px;
+  }
 }

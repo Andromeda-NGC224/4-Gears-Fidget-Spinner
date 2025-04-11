@@ -13,9 +13,42 @@
   font-weight: 700;
 }
 
-.faqList {
+.faqListLowWidth {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 332px;
+}
+.faqListHighWidth {
+  display: none;
+}
+
+.orderButton {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .section {
+    margin-bottom: 150px;
+  }
+  .title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 80px;
+  }
+  .faqListLowWidth {
+    display: none;
+  }
+
+  .faqListHighWidth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    width: 1043px;
+  }
+  .orderButton {
+    display: flex;
+    padding: 24px 96px;
+    font-size: 24px;
+  }
 }

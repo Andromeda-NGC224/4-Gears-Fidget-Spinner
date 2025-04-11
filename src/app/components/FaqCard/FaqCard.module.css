@@ -38,7 +38,7 @@
 .icon {
   min-width: 24px;
   min-height: 24px;
-  color: var(--text-color-blue)
+  color: var(--text-color-blue);
 }
 
 .rotated {
@@ -61,4 +61,24 @@
 
 .active .content {
   max-height: 500px;
+}
+
+
+@media screen and (min-width: 1440px) {
+  .number {
+    min-width: 54px;
+    min-height: 54px;
+    font-size: 36px;
+  }
+  .buttonCard {
+    justify-content: flex-start;
+  }
+  .answer {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .icon {
+    margin-left: auto;
+  }
+  
 }

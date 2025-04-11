@@ -4,6 +4,8 @@ import OrderBtn from '@/app/components/OrderBtn/OrderBtn';
 import WhyChooseList from '@/app/components/WhyChooseList/WhyChooseList';
 
 import css from './ExercisesSection.module.css';
+import Image from 'next/image';
+import LoaderBtn from '@/app/components/LoaderBtn/LoaderBtn';
 
 const ExercisesSection = () => {
   const exercises = [
@@ -39,37 +41,38 @@ const ExercisesSection = () => {
   return (
     <section id="exercises" className={css.section}>
       <div className={css.card}>
-        <div className={css.sliderWrapper}>
+        <div className={css.sliderWrapperLowWidth}>
           <ImageSlider images={sliderImages} width={288} height={288} />
+        </div>
+        <div className={css.sliderWrapperHighWidth}>
+          <Image
+            src="/images/playImage.png"
+            alt={'playImage'}
+            width={138}
+            height={138}
+            className={css.image}
+            priority
+          />
         </div>
 
         <div className={css.textBlock}>
           <h3 className={css.title}>Захоплюючі вправи для розвитку</h3>
           <p className={css.subtitle}>Опис вправ</p>
           <ExercisesList items={exercises} />
-          <OrderBtn
-            style={{
-              background: '#FFFFFF',
-              color: '#5390EC',
-              paddingLeft: 48,
-              paddingRight: 48,
-            }}
-          />
+          <div className={css.buttonsContainer}>
+            <LoaderBtn className={css.loaderBtn} />
+            <OrderBtn className={css.orderButton} />
+          </div>
         </div>
       </div>
 
       <div className={css.WhyChooseContainer}>
         <h2 className={css.WhyChooseTitle}>
-          Чому батьки <br />
+          Чому батьки <br className={css.WhyChooseBreak} />
           обирають <span>FlexiFun Geometry</span>
         </h2>
         <WhyChooseList items={WhyChooseItems} />
-        <OrderBtn
-          style={{
-            paddingLeft: 48,
-            paddingRight: 48,
-          }}
-        />
+        <OrderBtn className={css.orderButton} />
       </div>
     </section>
   );

@@ -27,3 +27,42 @@
   text-align: center;
   margin-bottom: 60px;
 }
+.subtitleBreak {
+  display: block;
+}
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.orderButton {
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-top: 24px;
+}
+@media screen and (min-width: 1440px) {
+  .section {
+    width: 1409px;
+    padding: 0;
+    margin: 150px auto;
+  }
+  .title {
+    font-size: 64px;
+  }
+  .subtitle {
+    margin-bottom: 80px;
+  }
+  .subtitleBreak {
+    display: none;
+  }
+  .cardsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .orderButton {
+    padding: 24px 96px;
+    font-size: 24px;
+    margin-top: 40px;
+  }
+}
