@@ -100,10 +100,13 @@
     color: var(--text-color-blue);
   }
   .logoContainer {
+    gap: 0;
     width: 220px;
-    height: 64px;
+    height: 54px;
   }
   .logoText {
+    line-height: 1;
+    height: 38px;
     font-size: 42px;
   }
   .slogan {

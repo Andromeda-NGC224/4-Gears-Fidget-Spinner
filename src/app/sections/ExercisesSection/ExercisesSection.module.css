@@ -70,9 +70,16 @@
 .WhyChooseBreak {
   display: block;
 }
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .orderButton {
   padding-left: 48px;
   padding-right: 48px;
+  background: var(--text-color-white);
+  color: var(--secondblue-color);
 }
 @media screen and (min-width: 1440px) {
   .section {

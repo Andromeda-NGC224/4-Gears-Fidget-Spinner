@@ -1,4 +1,8 @@
+'use client';
+
+import { useState } from 'react';
 import css from './OrderBtn.module.css';
+import OrderModal from '@/app/components/OrderModal/OrderModal';
 
 type OrderBtnProps = {
   style?: React.CSSProperties;
@@ -6,10 +10,18 @@ type OrderBtnProps = {
 };
 
 const OrderBtn = ({ style, className }: OrderBtnProps) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <button style={style} className={`${css.orderButton} ${className || ''}`}>
-      Замовити
-    </button>
+    <>
+      <button
+        onClick={() => setIsModalOpen(true)}
+        style={style}
+        className={`${css.orderButton} ${className || ''}`}
+      >
+        Замовити
+      </button>
+      {isModalOpen && <OrderModal onClose={() => setIsModalOpen(false)} />}
+    </>
   );
 };
 
