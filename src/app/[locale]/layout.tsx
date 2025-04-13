@@ -10,12 +10,11 @@ const fredoka = Fredoka({
 
 export default async function RootLayout({
   children,
-  params,
+  params: { locale },
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const locale = params.locale as 'uk' | 'sk';
   const messages = await getMessages({ locale });
 
   return (
