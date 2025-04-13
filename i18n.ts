@@ -3,9 +3,9 @@ import { getRequestConfig } from 'next-intl/server';
 const locales = ['uk', 'sk'];
 
 export default getRequestConfig(async ({ requestLocale }) => {
-  const locale = await requestLocale;
+  const locale = (await requestLocale) as string;
 
-  if (!locales.includes(locale as any)) {
+  if (!locales.includes(locale)) {
     console.log('Locale is not defined, using default locale:', locale);
   }
 
@@ -18,7 +18,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     console.error(`Failed to load messages for ${locale}`, error);
     return {
       messages: (await import(`@/messages/uk.json`)).default,
-      locale,
+      locale: 'uk',
     };
   }
 });
