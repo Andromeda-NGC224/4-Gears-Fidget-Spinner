@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "stepsToDevelop": "Čo rozvíja súpravu",
+    "exercises": "Špeciálne cvičenia",
+    "howItWork": "Ako to funguje",
+    "reviews": "Recenzie"
+  },
+  "header": {
+    "slogan": "EXPLORE - PLAY - LEARN"
+  },
+  "stepsToDevelop": {
+    "title": "3 jednoduché kroky k rýchlemu vývoju",
+    "step1": {
+      "title": "Získajte súpravu",
+      "descriptions": [
+        "Farebná súprava s geometrickými tvarmi a základňou na ich umiestnenie",
+        "Basic Memory Case na trénovanie pamäti a pozornosti"
+      ]
+    },
+    "step2": {
+      "title": "Naskenujte QR kód na karte v súprave a získajte",
+      "descriptions": [
+        "Okamžitý prístup k systému vývojových cvičení vyvinutých detskými psychológmi",
+        "Prístup k interaktívnemu online trenažéru"
+      ]
+    },
+    "step3": {
+      "title": "Vykonávajte cvičenia a sledujte pokrok v online trenažéri",
+      "descriptions": [
+        "Stačí 15 minút denne zábavných aktivít s geometrickými tvarmi, aby ste videli citeľný pokrok už po dvoch týždňoch"
+      ]
+    }
+  }
+}

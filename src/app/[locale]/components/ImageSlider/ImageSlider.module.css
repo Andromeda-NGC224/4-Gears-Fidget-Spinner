@@ -1,0 +1,45 @@
+:global(.slick-dots li.slick-active) .paging {
+  background: var(--firstblue-color);
+}
+
+.sliderContainer {
+  position: relative;
+  margin: 0 0 32px 0;
+  box-sizing: content-box;
+}
+
+.imageWrapper {
+  border-radius: 10.77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paging {
+  width: 20px;
+  height: 10px;
+  background: #cddbe3;
+  border-radius: 12.42px;
+}
+.prevArrow,
+.nextArrow {
+  width: 45px;
+  height: 45px;
+  bottom: -26px;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondblue-color);
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.prevArrow {
+  left: 24px;
+}
+
+.nextArrow {
+  right: 24px;
+}

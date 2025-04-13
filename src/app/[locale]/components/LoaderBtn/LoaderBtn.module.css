@@ -1,0 +1,58 @@
+.btnContainer {
+  width: 278px;
+  height: 77px;
+  padding: 16px 24px;
+  background: #fff5f0;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 24px;
+}
+.pagination {
+  display: flex;
+  gap: 7px;
+}
+.paging {
+  width: 20px;
+  height: 10px;
+  background: #ffe0b9;
+  border-radius: 12.42px;
+}
+.paging.active {
+  background: linear-gradient(
+    to bottom,
+    var(--firstblue-color),
+    var(--secondblue-color)
+  );
+}
+.prevArrow,
+.nextArrow {
+  width: 40px;
+  height: 40px;
+  bottom: -28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color-white);
+  border-radius: 50px;
+  z-index: 10;
+  pointer-events: auto;
+  background-color: var(--firstblue-color);
+}
+
+.prevArrow svg,
+.nextArrow svg {
+  min-width: 52px;
+  min-height: 52px;
+}
+
+.prevArrow {
+  left: 24px;
+}
+
+.nextArrow {
+  right: 24px;
+}
