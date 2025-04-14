@@ -6,13 +6,6 @@
   align-items: flex-start;
   width: 328px;
 }
-
-.card:last-child .cardTitle {
-  text-align: center;
-}
-.card:last-child .listItem {
-  font-weight: 700;
-}
 .imageWrapper {
   width: 100%;
   overflow: hidden;
@@ -51,29 +44,17 @@
   line-height: 1.65;
 }
 .icon {
-  color: #3b82f6;
-  margin-top: 3px;
-  flex-shrink: 0;
+  color: #ebf4ffb2;
+  min-width: 32px;
+  min-height: 32px;
 }
 @media screen and (min-width: 1440px) {
   .card {
     width: 459px;
-    height: 841px;
+    height: 683px;
   }
-  .card:last-child {
-    width: 1408px;
-    height: 234px;
-    align-items: center;
-    gap: 30px;
-  }
-  .card:last-child .title {
-    margin-top: 52px;
-  }
-  .card:last-child .list {
-    flex-direction: row;
-  }
-  .card:last-child .listItem {
-    align-items: center;
-    width: 324px;
+  .cardTitle {
+    font-size: 32px;
+    margin-bottom: 30px;
   }
 }

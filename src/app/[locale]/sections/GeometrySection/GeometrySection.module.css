@@ -19,19 +19,7 @@
 .subtitle {
   font-size: 32px;
   font-weight: 600;
-  color: var(--text-color-black);
-  margin-bottom: 16px;
-}
-.subtitleHighWidth {
-  font-size: 32px;
-  font-weight: 600;
-  color: var(--text-color-blue);
-  margin-bottom: 24px;
-  display: none;
-}
-.imagesContainer img {
-  width: 100%;
-  border-radius: 10.77px;
+  color: #333333;
   margin-bottom: 16px;
 }
 
@@ -46,6 +34,7 @@
   font-weight: 400;
   margin-bottom: 16px;
   line-height: 1.5;
+  color: #666666;
 }
 
 .featureItem {
@@ -62,7 +51,7 @@
   justify-content: center;
   align-items: center;
   gap: 13px;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 .orderButtonHighWidth {
   display: none;
@@ -109,55 +98,74 @@
   border-radius: 5px;
   transform: translateY(-50%);
 }
-.sliderHighWidth {
+
+.imgContainerHighWidth {
+  background-color: var(--background-main-color);
+  border-radius: 23px;
   display: none;
 }
-
+.imgContainerlowWidth {
+  background-color: var(--background-main-color);
+  border-radius: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 36px;
+}
+.imgContainerText {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
 @media screen and (min-width: 1440px) {
-  .sliderLowWidth {
+  .imgContainerText {
+    font-size: 24px;
+  }
+  .imgContainerHighWidth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+  }
+  .imgContainerlowWidth {
     display: none;
   }
-  .sliderHighWidth {
-    display: block;
+  .imagesContainer {
+    margin: 0 auto 0 0;
   }
+  .subtitle {
+    font-size: 48px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 24px;
+  }
+
   .section {
     display: flex;
+    align-items: center;
     gap: 44px;
     padding-top: 158px;
     padding-bottom: 118px;
   }
-  .sliderHighWidth {
-    margin-right: auto;
-    width: 664px;
-    height: 670px;
-  }
-  .sliderHighWidth {
-    background-color: #fbfbfb;
-    border-radius: 57.24px;
-    margin-bottom: 0px;
-  }
   .content {
     margin: 0 0 0 auto;
-    width: 697px;
-    height: 657px;
+    width: 694px;
+    height: 493px;
     padding-right: 60px;
   }
   .title {
     font-size: 24px;
     margin-bottom: 25px;
   }
-  .subtitle {
-    display: none;
-  }
-  .subtitleHighWidth {
-    display: block;
-  }
   .description {
     font-size: 24px;
     line-height: 1;
     text-decoration: none;
     margin-bottom: 40px;
-    color: var(--text-color-blue);
+    color: #666666;
   }
   .featureItem {
     margin-bottom: 18px;
@@ -173,6 +181,7 @@
   .actions {
     justify-content: start;
     gap: 36px;
+    margin-top: 48px;
   }
   .priceContainer {
     width: 222px;

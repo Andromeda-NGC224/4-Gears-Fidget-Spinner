@@ -1,41 +1,45 @@
+'use client';
+
+import React from 'react';
+import { useTranslations } from 'next-intl';
 import FaqCard from '@/app/[locale]/components/FaqCard/FaqCard';
 import css from './FaqSection.module.css';
 import OrderBtn from '@/app/[locale]/components/OrderBtn/OrderBtn';
 
 const FaqSection = () => {
+  const t = useTranslations();
+
   const faqItemsLowWidth = [
-    { question: 'Для якого віку підходить набір?' },
-    { question: 'Скільки часу потрібно приділяти заняттям?' },
-    { question: 'Чи безпечний набір?' },
-    { question: 'Чи потрібна допомога батьків?' },
-    { question: 'Як зрозуміти, що дитина правильно виконує вправи?' },
+    { question: t('faq_1_question') },
+    { question: t('faq_2_question') },
+    { question: t('faq_3_question') },
+    { question: t('faq_4_question') },
+    { question: t('faq_5_question') },
     {
-      question: 'Як часто потрібно займатися для досягнення результату?',
-      answer:
-        'Для помітного розвитку достатньо займатися +5 разів на тиждень по 15 хвилин. Головне – регулярність і позитивний настрій дитини.',
+      question: t('faq_6_question'),
+      answer: t('faq_6_answer'),
     },
-    { question: 'Хто виробник?' },
+    { question: t('faq_7_question') },
   ];
 
   const faqItemsHighWidth = [
-    { question: 'Що таке Memory Case?' },
-    { question: 'Як працює онлайн-тренажер?' },
-    { question: 'Для якого віку підходить набір?' },
-    { question: 'Скільки часу потрібно приділяти заняттям?' },
-    { question: 'Чи безпечний набір?' },
-    { question: 'Чи потрібна допомога батьків?' },
-    { question: 'Як зрозуміти, що дитина правильно виконує вправи?' },
+    { question: t('faq_8_question') },
+    { question: t('faq_9_question') },
+    { question: t('faq_1_question') },
+    { question: t('faq_2_question') },
+    { question: t('faq_3_question') },
+    { question: t('faq_4_question') },
+    { question: t('faq_5_question') },
     {
-      question: 'Як часто потрібно займатися для досягнення результату?',
-      answer:
-        'Для помітного розвитку достатньо займатися +5 разів на тиждень по 15 хвилин. Головне – регулярність і позитивний настрій дитини.',
+      question: t('faq_6_question'),
+      answer: t('faq_6_answer'),
     },
-    { question: 'Хто виробник?' },
+    { question: t('faq_7_question') },
   ];
 
   return (
     <section className={css.section}>
-      <h2 className={css.title}>FAQ</h2>
+      <h2 className={css.title}>{t('faq_title')}</h2>
       <div className={css.faqListLowWidth}>
         {faqItemsLowWidth.map((item, index) => (
           <FaqCard

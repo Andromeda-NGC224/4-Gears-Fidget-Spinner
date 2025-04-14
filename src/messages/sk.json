@@ -1,34 +1,85 @@
 {
-  "nav": {
-    "stepsToDevelop": "Čo rozvíja súpravu",
-    "exercises": "Špeciálne cvičenia",
-    "howItWork": "Ako to funguje",
-    "reviews": "Recenzie"
-  },
-  "header": {
-    "slogan": "EXPLORE - PLAY - LEARN"
-  },
-  "stepsToDevelop": {
-    "title": "3 jednoduché kroky k rýchlemu vývoju",
-    "step1": {
-      "title": "Získajte súpravu",
-      "descriptions": [
-        "Farebná súprava s geometrickými tvarmi a základňou na ich umiestnenie",
-        "Basic Memory Case na trénovanie pamäti a pozornosti"
-      ]
-    },
-    "step2": {
-      "title": "Naskenujte QR kód na karte v súprave a získajte",
-      "descriptions": [
-        "Okamžitý prístup k systému vývojových cvičení vyvinutých detskými psychológmi",
-        "Prístup k interaktívnemu online trenažéru"
-      ]
-    },
-    "step3": {
-      "title": "Vykonávajte cvičenia a sledujte pokrok v online trenažéri",
-      "descriptions": [
-        "Stačí 15 minút denne zábavných aktivít s geometrickými tvarmi, aby ste videli citeľný pokrok už po dvoch týždňoch"
-      ]
-    }
-  }
+  "what_develops_the_set": "Čo rozvíja súprava",
+  "special_exercises": "Špeciálne cvičenia",
+  "how_it_works": "Ako to funguje",
+  "reviews": "Recenzie",
+  "user_agreement": "Zmluva s používateľom",
+  "certificates": "Certifikáty",
+  "order": "Objednať",
+  "geometry_title": "FlexiFun - 4 Gears Fidget Spinner",
+  "geometry_subtitle": "Dotykový simulátor pre komplexný rozvoj vášho dieťaťa",
+  "geometry_description": "Spolu so simulátorom dostanete inovatívny cvičebný systém vyvinutý detskými neuropsychológmi na tréning mozgu, ktorý zaberie len 10 minút denne.",
+  "slovak_production": "Slovak production",
+
+  "logic_development": "Logické myslenie cez triedenie tvarov a farieb",
+  "spatial_perception": "Priestorové vnímanie cez prácu s veľkosťami",
+  "fine_motor_skills": "Jemnú motoriku prostredníctvom presných pohybov",
+  "attention_and_memory": "Pozornosť a pamäť cez postupné činnosti",
+  "steps_title": "3 jednoduché kroky",
+  "steps_subtitle": "k rýchlemu rozvoju",
+  "steps_image_alt": "Dieťa s geometrickými tvarmi",
+  "steps_kit_title": "Čo je súčasťou súpravy",
+  "steps_image_desc": "Získajte prístup do cvičebného systému pomocou QR kódu ihneď po objednávke!",
+
+  "steps_1_title": "Zlepšená koncentrácia už po 10 minútach hry",
+
+  "steps_2_title": "Rozvoj jemnej motoriky pomocou špeciálnych cvičení",
+  "steps_3_title": "Tréning interhemisférickej interakcie hrou",
+  "steps_4_title": "Príprava ruky na písanie a kreslenie",
+
+  "kits_list_title": "V súprave",
+  "kits_list_kit1_description": "Inovatívny spinner so 4 prevodovým systémom",
+  "kits_list_kit2_description": "Prístup k špeciálne navrhnutým cvičeniam cez QR kód",
+  "kits_list_kit3_description": "Tréningové metódy od detských neuropsychológov",
+
+  "how_it_work_title": "Čo FlexiFun 4 Gears vyvíja?",
+
+  "how_it_work_motor_title": "Jemná motorika",
+  "how_it_work_motor_1": "Zlepšenie koordinácie prstov",
+  "how_it_work_motor_2": "Príprava ruky na písanie",
+  "how_it_work_motor_3": "Rozvoj hmatovej citlivosti",
+
+  "how_it_work_concentration_title": "Sústredenie pozornosti",
+  "how_it_work_concentration_1": "Tréning vytrvalosti",
+  "how_it_work_concentration_2": "Zlepšenie schopnosti sústrediť sa",
+  "how_it_work_concentration_3": "Kontrola nad pohybmi",
+
+  "how_it_work_neuroplasticity_title": "Neuroplasticita",
+  "how_it_work_neuroplasticity_1": "Rozvoj oboch mozgových hemisfér",
+  "how_it_work_neuroplasticity_2": "Zlepšenie pamäti",
+  "how_it_work_neuroplasticity_3": "Zvýšenie schopnosti učiť sa",
+
+  "exercises_title": "Zábavné cvičenia na rozvoj",
+  "exercises_subtitle": "Popis cvičení",
+  "exercise_1": "Učíme sa rozlišovať farby a vytvárať vzory. Dieťa si rozvíja pamäť a pozornosť zapamätávaním a reprodukciou sekvencií",
+  "exercise_2": "Skúmame vlastnosti rôznych tvarov. Od jednoduchých po zložité: kruh, trojuholník, štvorec a ich kombinácie",
+  "exercise_3": "Porovnávame a zrovnávame rôzne tvary, učíme sa chápať ich vlastnosti a nachádzať vzory",
+  "exercise_4": "Učíme sa pojmy „viac-menej“, „vyššie-nižšie“, rozvíjame priestorové myslenie.",
+  "why_choose_title": "Prečo si rodičia vyberajú FlexiFun Geometry",
+  "why_choose_1": "Prístup k cvičeniam cez QR kód",
+  "why_choose_2": "Stačí len 10 minút denne na dosiahnutie výsledkov",
+  "why_choose_3": "100% bezpečné a certifikované materiály",
+
+  "section_title": "Recenzie",
+  "review_1_author": "Zuzana Čierna",
+  "review_1_position": "metodička predškolskej výchovy",
+  "review_1_text": "Skvelý nástroj na rozvoj priestorového myslenia a jemnej motoriky. Obzvlášť cenné je, že všetky zručnosti sa rozvíjajú hravou formou, bez nátlaku.",
+  "review_2_author": "Tatiana",
+  "review_2_position": "riaditeľka detského centra",
+  "review_2_text": "Odporúčam túto sadu na prípravu na školu. Deti, ktoré sa hrali s podobnými geometrickými tvarmi, ľahšie zvládajú matematiku v prvom ročníku.",
+  "review_3_author": "Vlada",
+  "review_3_position": "učiteľka v materskej škole",
+  "review_3_text": "Výborne sa hodí na individuálnu aj skupinovú prácu. Deti si rýchlo osvoja základné geometrické pojmy.",
+
+  "faq_title": "FAQ",
+  "faq_1_question": "Pre aký vek je sada vhodná?",
+  "faq_2_question": "Koľko času je potrebné venovať cvičeniam?",
+  "faq_3_question": "Je sada bezpečná?",
+  "faq_4_question": "Potrebujú deti pomoc rodičov?",
+  "faq_5_question": "Ako zistiť, že dieťa správne vykonáva cvičenia?",
+  "faq_6_question": "Ako často by sa malo cvičiť pre dosiahnutie výsledku?",
+  "faq_6_answer": "Pre viditeľný pokrok stačí cvičiť 5+ krát do týždňa po 15 minút. Hlavné je pravidelnosť a pozitívny prístup dieťaťa.",
+  "faq_7_question": "Kto je výrobcom?",
+  "faq_8_question": "Čo je Memory Case?",
+  "faq_9_question": "Ako funguje online tréner?"
 }

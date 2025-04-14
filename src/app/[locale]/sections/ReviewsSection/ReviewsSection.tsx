@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import ReviewCard from '@/app/[locale]/components/ReviewCard/ReviewCard';
 
 import css from './ReviewsSection.module.css';
@@ -6,37 +9,38 @@ import OrderBtn from '@/app/[locale]/components/OrderBtn/OrderBtn';
 import LoaderBtn from '@/app/[locale]/components/LoaderBtn/LoaderBtn';
 
 const ReviewsSection = () => {
+  const t = useTranslations();
+
   const reviews = [
     {
       imageSrc: '/images/zuzana.png',
-      author: 'Зузана Черна',
-      position: 'методист дошкільної освіти',
-      text: 'Чудовий інструмент для розвитку просторового мислення та дрібної моторики. Особливо цінно, що всі навички розвиваються в ігровій формі, без примушування.',
+      author: t('review_1_author'),
+      position: t('review_1_position'),
+      text: t('review_1_text'),
     },
     {
       imageSrc: '/images/tatiana.png',
-      author: 'Тетяна',
-      position: 'керівник дитячого центру',
-      text: 'Рекомендую цей набір для підготовки до школи. Діти, які грали з подібними геометричними формами, легше освоюють математику в першому класі.',
+      author: t('review_2_author'),
+      position: t('review_2_position'),
+      text: t('review_2_text'),
     },
     {
       imageSrc: '/images/vlada.png',
-      author: 'Влада',
-      position: 'вихователька дитячого садка',
-      text: 'Чудово підходить як для індивідуальної роботи, так і для групових занять. Діти швидко опановують базові геометричні поняття.',
+      author: t('review_3_author'),
+      position: t('review_3_position'),
+      text: t('review_3_text'),
     },
   ];
 
   return (
     <section id="reviews" className={css.section}>
-      <h2 className={css.title}>Відгуки</h2>
+      <h2 className={css.title}>{t('section_title')}</h2>
       <LoaderBtn className={css.loaderBtn} />
       <ul className={css.list}>
         {reviews.map((review, index) => (
           <ReviewCard key={index} {...review} />
         ))}
       </ul>
-
       <OrderBtn className={css.orderButton} />
     </section>
   );

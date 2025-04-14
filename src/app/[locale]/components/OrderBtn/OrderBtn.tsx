@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import css from './OrderBtn.module.css';
 import OrderModal from '@/app/[locale]/components/OrderModal/OrderModal';
+import { useTranslations } from 'next-intl';
 
 type OrderBtnProps = {
   style?: React.CSSProperties;
@@ -10,6 +11,7 @@ type OrderBtnProps = {
 };
 
 const OrderBtn = ({ style, className }: OrderBtnProps) => {
+  const t = useTranslations();
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
@@ -18,7 +20,7 @@ const OrderBtn = ({ style, className }: OrderBtnProps) => {
         style={style}
         className={`${css.orderButton} ${className || ''}`}
       >
-        Замовити
+        {t('order')}
       </button>
       {isModalOpen && <OrderModal onClose={() => setIsModalOpen(false)} />}
     </>

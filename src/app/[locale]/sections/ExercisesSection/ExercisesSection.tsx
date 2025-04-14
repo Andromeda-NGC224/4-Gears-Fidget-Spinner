@@ -1,18 +1,23 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import ImageSlider from '@/app/[locale]/components/ImageSlider/ImageSlider';
 import ExercisesList from '@/app/[locale]/components/ExercisesList/ExercisesList';
 import OrderBtn from '@/app/[locale]/components/OrderBtn/OrderBtn';
 import WhyChooseList from '@/app/[locale]/components/WhyChooseList/WhyChooseList';
-
-import css from './ExercisesSection.module.css';
 import Image from 'next/image';
 import LoaderBtn from '@/app/[locale]/components/LoaderBtn/LoaderBtn';
 
+import css from './ExercisesSection.module.css';
+
 const ExercisesSection = () => {
+  const t = useTranslations();
+
   const exercises = [
-    'Навчаємось розрізняти кольори та створювати патерни. Дитина розвиває пам’ять і увагу, запам’ятовуючи та відтворюючи послідовності',
-    'Досліджуємо властивості різних форм. Від простого до складного: коло, трикутник, квадрат та їх комбінації',
-    'Порівнюємо та зіставляємо різні фігури, вчимося розуміти їх особливості та знаходити закономірності',
-    'Вивчаємо поняття “більше-менше”, “вище-нижче”, розвиваємо просторове мислення.',
+    t('exercise_1'),
+    t('exercise_2'),
+    t('exercise_3'),
+    t('exercise_4'),
   ];
 
   const sliderImages = [
@@ -23,18 +28,18 @@ const ExercisesSection = () => {
     '/images/playImage.png',
   ];
 
-  const WhyChooseItems = [
+  const whyChooseItems = [
     {
       image: '/images/qr.png',
-      text: 'Доступ до вправ за QR-кодом',
+      text: t('why_choose_1'),
     },
     {
       image: '/images/time.png',
-      text: 'Достатньо всього 10 хвилин на день для досягнення результату',
+      text: t('why_choose_2'),
     },
     {
       image: '/images/shield.png',
-      text: '100% безпечні та сертифіковані матеріали',
+      text: t('why_choose_3'),
     },
   ];
 
@@ -47,7 +52,7 @@ const ExercisesSection = () => {
         <div className={css.sliderWrapperHighWidth}>
           <Image
             src="/images/playImage.png"
-            alt={'playImage'}
+            alt="playImage"
             width={138}
             height={138}
             className={css.image}
@@ -56,8 +61,8 @@ const ExercisesSection = () => {
         </div>
 
         <div className={css.textBlock}>
-          <h3 className={css.title}>Захоплюючі вправи для розвитку</h3>
-          <p className={css.subtitle}>Опис вправ</p>
+          <h3 className={css.title}>{t('exercises_title')}</h3>
+          <p className={css.subtitle}>{t('exercises_subtitle')}</p>
           <ExercisesList items={exercises} />
           <div className={css.buttonsContainer}>
             <LoaderBtn className={css.loaderBtn} />
@@ -67,11 +72,8 @@ const ExercisesSection = () => {
       </div>
 
       <div className={css.WhyChooseContainer}>
-        <h2 className={css.WhyChooseTitle}>
-          Чому батьки <br className={css.WhyChooseBreak} />
-          обирають <span>FlexiFun Geometry</span>
-        </h2>
-        <WhyChooseList items={WhyChooseItems} />
+        <h2 className={css.WhyChooseTitle}>{t('why_choose_title')}</h2>
+        <WhyChooseList items={whyChooseItems} />
         <OrderBtn className={css.orderButton} />
       </div>
     </section>

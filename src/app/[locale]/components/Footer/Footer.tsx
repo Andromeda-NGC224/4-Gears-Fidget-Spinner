@@ -2,8 +2,10 @@ import React from 'react';
 import css from './Footer.module.css';
 import SmoothScrollLink from '../SmoothScrollLink/SmoothScrollLink';
 import OrderBtn from '@/app/[locale]/components/OrderBtn/OrderBtn';
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
+  const t = useTranslations();
   return (
     <footer className={css.footer}>
       <div className={css.content}>
@@ -17,22 +19,24 @@ export default function Footer() {
             <nav className={css.linksList}>
               <li className={css.linksTitle}>FlexiFun Geometry</li>
               <SmoothScrollLink targetId="steps-to-develop">
-                Що розвиває набір
+                {t('what_develops_the_set')}
               </SmoothScrollLink>
               <SmoothScrollLink targetId="exercises">
-                Спеціальні вправи
+                {t('special_exercises')}
               </SmoothScrollLink>
               <SmoothScrollLink targetId="how-it-work">
-                Як це працює
+                {t('how_it_works')}
               </SmoothScrollLink>
-              <SmoothScrollLink targetId="reviews">Відгуки</SmoothScrollLink>
-              <p className={css.sertficats}>Сертифікати</p>
+              <SmoothScrollLink targetId="reviews">
+                {t('reviews')}
+              </SmoothScrollLink>
+              <p className={css.sertficats}>{t('certificates')}</p>
             </nav>
           </div>
         </div>
 
         <div className={css.agreementAndOrder}>
-          <p className={css.linksTitle}>Угода користувача</p>
+          <p className={css.linksTitle}>{t('user_agreement')}</p>
 
           <OrderBtn className={css.orderButton} />
         </div>

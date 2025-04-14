@@ -2,119 +2,71 @@
 
 import Image from 'next/image';
 import { IoIosArrowDroprightCircle } from 'react-icons/io';
-import { useTranslations } from 'next-intl';
-import KitsList from '@/app/[locale]/components/KitsList/KitsList';
 
-import css from './StepsToDevelopSection.module.css';
+import KitsList from '@/app/[locale]/components/KitsList/KitsList';
 import OrderBtn from '@/app/[locale]/components/OrderBtn/OrderBtn';
+import css from './StepsToDevelopSection.module.css';
+import { useTranslations } from 'next-intl';
 
 const StepsToDevelopSection = () => {
-  const t = useTranslations('stepsToDevelop');
+  const t = useTranslations();
 
-  const stepsListLowWidth = [
+  const stepsList = [
     {
-      title: t('step1.title'),
-      description: t('step1.descriptions.0'),
+      title: t('steps_1_title'),
     },
     {
-      title: t('step2.title'),
-      description: t('step2.descriptions.0'),
+      title: t('steps_2_title'),
     },
     {
-      title: t('step3.title'),
-      description: t('step3.descriptions.0'),
-    },
-  ];
-
-  const stepsListHighWidth = [
-    {
-      title: t('step1.title'),
-      descriptions: [t('step1.descriptions.0'), t('step1.descriptions.1')],
+      title: t('steps_3_title'),
     },
     {
-      title: t('step2.title'),
-      descriptions: [t('step2.descriptions.0'), t('step2.descriptions.1')],
-    },
-    {
-      title: t('step3.title'),
-      descriptions: [t('step3.descriptions.0')],
-    },
-  ];
-
-  const kits = [
-    {
-      description:
-        'Геометричні фігури FlexiFun Geometry і дошка Basic Board для розвитку моторики та логіки',
-      images: ['/images/image110.png', '/images/Group162910.png'],
-    },
-    {
-      description: `Memory Case для тренування пам'яті та уваги`,
-      images: ['/images/Frame1000002924.png'],
-    },
-    {
-      description:
-        'Доступ до спеціально розроблених вправ та онлайн тренажеру через QR-код',
-      images: ['/images/Frame1000002923.png'],
+      title: t('steps_4_title'),
     },
   ];
 
   return (
     <section id="steps-to-develop" className={css.section}>
-      <h2 className={css.title}>{t('title')}</h2>
+      <h2 className={css.title}>
+        {t('steps_title')} <br className={css.titleTransfer} />
+        {t('steps_subtitle')}
+      </h2>
 
       <div className={css.firstPartContainer}>
         <div className={css.imageWrapper}>
           <Image
-            src="/images/StepsToDevelopSectionImg.png"
-            alt="Дитина з геометричними фігурами"
+            src="/images/brainImg.png"
+            alt={t('steps_image_alt')}
             width={328}
             height={337}
             className={css.imageLowWidth}
             priority
           />
           <Image
-            src="/images/StepsToDevelopSectionImgHigh.png"
-            alt="Дитина з геометричними фігурами"
+            src="/images/brainImg.png"
+            alt={t('steps_image_alt')}
             width={689}
             height={696}
             className={css.imageHighWidth}
             priority
           />
+          <p className={css.imageWrapperText}>{t('steps_image_desc')}</p>
         </div>
 
-        <ul className={css.stepsListLowWidth}>
-          {stepsListLowWidth.map((step, index) => (
+        <ul className={css.stepsList}>
+          <h3>{t('steps_list_main_title')}</h3>
+          <p className={css.stepsListMainDesc}>{t('steps_list_main_desc')}</p>
+          {stepsList.map((step, index) => (
             <li key={index} className={css.step}>
-              <div className={css.icon}>
-                <IoIosArrowDroprightCircle className={css.iconSvg} />
-              </div>
-              <ul className={css.stepDescListLowWidth}>
-                <li className={css.stepTitle}>{step.title}</li>
-                <li className={css.stepDesc}>{step.description}</li>
-              </ul>
-            </li>
-          ))}
-        </ul>
+              <IoIosArrowDroprightCircle className={css.iconSvg} />
 
-        <ul className={css.stepsListHighWidth}>
-          {stepsListHighWidth.map((step, index) => (
-            <li key={index} className={css.step}>
-              <div className={css.icon}>
-                <IoIosArrowDroprightCircle className={css.iconSvg} />
-              </div>
-              <ul>
-                <li className={css.stepTitle}>{step.title}</li>
-                {step.descriptions.map((desc, descIndex) => (
-                  <li key={descIndex} className={css.stepDesc}>
-                    {desc}
-                  </li>
-                ))}
-              </ul>
+              <p className={css.stepTitle}>{step.title}</p>
             </li>
           ))}
         </ul>
       </div>
-      <h2 className={css.titleSecond}>Що входить до набору</h2>
+
       <KitsList />
       <OrderBtn className={css.orderButton} />
     </section>

@@ -4,75 +4,31 @@ import { IoCheckmarkCircleSharp } from 'react-icons/io5';
 import ImageSlider from '@/app/[locale]/components/ImageSlider/ImageSlider';
 import css from './GeometrySection.module.css';
 import OrderBtn from '@/app/[locale]/components/OrderBtn/OrderBtn';
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export default function GeometrySection() {
-  const images = [
-    '/images/GeometrySectionImg.png',
-    '/images/GeometrySectionImg.png',
-    '/images/GeometrySectionImg.png',
-    '/images/GeometrySectionImg.png',
-    '/images/GeometrySectionImg.png',
-  ];
+  const t = useTranslations();
 
   return (
     <section className={css.section}>
       <div className={css.content}>
-        <h2 className={css.title}>
-          FlexiFun Geometry - Перші кроки у світ логіки
-        </h2>
-        <h3 className={css.subtitle}>
-          Розвивальний набір для дітей від 1 до 3 років
-        </h3>
-        <h3 className={css.subtitleHighWidth}>
-          Розвивальний набір для дітей від 1 до 3 років з інтерактивним
-          онлайн-тренажером
-        </h3>
-        <ImageSlider
-          className={css.sliderLowWidth}
-          images={images}
-          width={328}
-          height={328}
-        />
-        <p className={css.description}>
-          Уявіть: доки ваш малюк захоплено грається з яскравими геометричними
-          фігурами, його мозок проходить інтенсивне тренування! Кожне торкання
-          до фігур, кожна спроба знайти правильне місце розвиває:
-        </p>
+        <h2 className={css.title}>{t('geometry_title')}</h2>
+        <h3 className={css.subtitle}>{t('geometry_subtitle')}</h3>
 
-        <ul className={css.featuresList}>
-          <li className={css.featureItem}>
-            <IoCheckmarkCircleSharp
-              style={{ minWidth: 24, minHeight: 24 }}
-              size={24}
-              color="#5EDD60"
-            />
-            <span>Логічне мислення через сортування форм і кольорів</span>
-          </li>
-          <li className={css.featureItem}>
-            <IoCheckmarkCircleSharp
-              style={{ minWidth: 24, minHeight: 24 }}
-              size={24}
-              color="#5EDD60"
-            />
-            <span>Просторове сприйняття через роботу з розмірами</span>
-          </li>
-          <li className={css.featureItem}>
-            <IoCheckmarkCircleSharp
-              style={{ minWidth: 24, minHeight: 24 }}
-              size={24}
-              color="#5EDD60"
-            />
-            <span>Дрібну моторику через точні рухи</span>
-          </li>
-          <li className={css.featureItem}>
-            <IoCheckmarkCircleSharp
-              style={{ minWidth: 24, minHeight: 24 }}
-              size={24}
-              color="#5EDD60"
-            />
-            <span>Увагу та пам'ять через послідовні дії</span>
-          </li>
-        </ul>
+        <p className={css.description}>{t('geometry_description')}</p>
+
+        <div className={css.imgContainerlowWidth}>
+          <Image
+            src="/images/heroSection.png"
+            alt="heroSection"
+            width={328}
+            height={328}
+            priority
+          />
+          <p className={css.imgContainerText}>Словацьке виробництво</p>
+        </div>
+
         <div className={css.actions}>
           <OrderBtn className={css.orderButtonHighWidth} />
           <div className={css.priceContainer}>
@@ -83,12 +39,16 @@ export default function GeometrySection() {
         </div>
       </div>
 
-      <ImageSlider
-        className={css.sliderHighWidth}
-        images={images}
-        width={644}
-        height={581}
-      />
+      <div className={css.imgContainerHighWidth}>
+        <Image
+          src="/images/heroSection.png"
+          alt="heroSection"
+          width={688}
+          height={614}
+          priority
+        />
+        <p className={css.imgContainerText}>{t('slovak_production')}</p>
+      </div>
     </section>
   );
 }

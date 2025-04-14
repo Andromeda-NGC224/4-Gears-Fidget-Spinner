@@ -39,9 +39,6 @@
     font-weight: 700;
     margin-bottom: 80px;
   }
-  .loaderBtn {
-    display: none;
-  }
 
   .list {
     flex-direction: row;

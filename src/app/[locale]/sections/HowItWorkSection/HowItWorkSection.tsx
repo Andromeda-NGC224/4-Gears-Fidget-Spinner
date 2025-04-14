@@ -1,58 +1,45 @@
 'use client';
 
 import HowItWorkCard from '@/app/[locale]/components/HowItWorkCard/HowItWorkCard';
-
-import css from './HowItWorkSection.module.css';
 import OrderBtn from '@/app/[locale]/components/OrderBtn/OrderBtn';
+import css from './HowItWorkSection.module.css';
+import { useTranslations } from 'next-intl';
 
 const HowItWorkSection = () => {
+  const t = useTranslations();
+
   return (
     <section id="how-it-work" className={css.section}>
-      <h2 className={css.title}>Комплексний розвиток через гру</h2>
-      <p className={css.subtitle}>
-        Кожне заняття — це маленьке відкриття!
-        <br className={css.subtitleBreak} /> Граючи з геометричними фігурами,
-        ваша дитина вчиться
-      </p>
+      <h2 className={css.title}>{t('how_it_work_title')}</h2>
+
       <div className={css.cardsContainer}>
         <HowItWorkCard
-          title="Логічне мислення"
-          imageSrc="/images/child.png"
+          title={t('how_it_work_motor_title')}
+          imageSrc="/images/motor.png"
           items={[
-            'Аналізувати форми та їх особливості',
-            'Знаходити закономірності в послідовностях',
-            'Розуміти причинно-наслідкові зв’язки',
-            'Приймати рішення на основі аналізу',
+            t('how_it_work_motor_1'),
+            t('how_it_work_motor_2'),
+            t('how_it_work_motor_3'),
           ]}
         />
 
         <HowItWorkCard
-          title="Дрібна моторика"
-          imageSrc="/images/hands.png"
+          title={t('how_it_work_concentration_title')}
+          imageSrc="/images/concentration.png"
           items={[
-            'Координація пальців для підготовки до письма',
-            'Захоплення та переміщення предметів різної форми',
-            'Тактильне сприйняття текстур і форм',
-            'Контроль над дрібними рухами',
+            t('how_it_work_concentration_1'),
+            t('how_it_work_concentration_2'),
+            t('how_it_work_concentration_3'),
           ]}
         />
+
         <HowItWorkCard
-          title="Просторове мислення"
-          imageSrc="/images/girl.png"
+          title={t('how_it_work_neuroplasticity_title')}
+          imageSrc="/images/neuroplasticity.png"
           items={[
-            'Розуміти взаємне розташування предметів',
-            'Розрізняти розміри та пропорції',
-            'Розвивати образне мислення',
-            'Покращувати орієнтацію в просторі',
-          ]}
-        />
-        <HowItWorkCard
-          title="Тренування пам'яті та уваги"
-          items={[
-            'Запам’ятовування послідовностей',
-            'Розвиток концентрації',
-            'Робота з кольором і формою',
-            'Адаптивна складність завдань',
+            t('how_it_work_neuroplasticity_1'),
+            t('how_it_work_neuroplasticity_2'),
+            t('how_it_work_neuroplasticity_3'),
           ]}
         />
       </div>
