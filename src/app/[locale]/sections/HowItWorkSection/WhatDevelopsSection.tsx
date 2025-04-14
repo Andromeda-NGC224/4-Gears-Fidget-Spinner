@@ -2,10 +2,10 @@
 
 import HowItWorkCard from '@/app/[locale]/components/HowItWorkCard/HowItWorkCard';
 import OrderBtn from '@/app/[locale]/components/OrderBtn/OrderBtn';
-import css from './HowItWorkSection.module.css';
+import css from './WhatDevelopsSection.module.css';
 import { useTranslations } from 'next-intl';
 
-const HowItWorkSection = () => {
+const WhatDevelopsSection = () => {
   const t = useTranslations();
 
   return (
@@ -49,4 +49,4 @@ const HowItWorkSection = () => {
   );
 };
 
-export default HowItWorkSection;
+export default WhatDevelopsSection;

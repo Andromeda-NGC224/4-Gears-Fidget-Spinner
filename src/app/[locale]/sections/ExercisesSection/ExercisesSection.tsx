@@ -9,6 +9,7 @@ import Image from 'next/image';
 import LoaderBtn from '@/app/[locale]/components/LoaderBtn/LoaderBtn';
 
 import css from './ExercisesSection.module.css';
+import HowItWorksPart from '@/app/[locale]/components/HowItWorksPart/HowItWorksPart';
 
 const ExercisesSection = () => {
   const t = useTranslations();
@@ -30,7 +31,7 @@ const ExercisesSection = () => {
 
   const whyChooseItems = [
     {
-      image: '/images/qr.png',
+      image: '/images/brainImg2.png',
       text: t('why_choose_1'),
     },
     {
@@ -40,6 +41,37 @@ const ExercisesSection = () => {
     {
       image: '/images/shield.png',
       text: t('why_choose_3'),
+    },
+    {
+      image: '/images/qr.png',
+      text: t('why_choose_4'),
+    },
+    {
+      image: '/images/gearImg.png',
+      text: t('why_choose_5'),
+    },
+    {
+      image: '/images/rulerImg.png',
+      text: t('why_choose_6'),
+    },
+  ];
+
+  const howItWorksItems = [
+    {
+      number: 3,
+      text: 'Простих кроків',
+    },
+    {
+      number: 1,
+      text: 'Получите спиннер с системой из 4 шестерёнок',
+    },
+    {
+      number: 2,
+      text: 'Отсканируйте QR-код для доступа к упражнениям',
+    },
+    {
+      number: 3,
+      text: 'Занимайтесь от 10 минут в день и наблюдайте положительный результат уже через две недели',
     },
   ];
 
@@ -71,10 +103,14 @@ const ExercisesSection = () => {
         </div>
       </div>
 
+      <div className={css.howItWorksPartContainer}>
+        <HowItWorksPart items={howItWorksItems} />
+      </div>
+
       <div className={css.WhyChooseContainer}>
         <h2 className={css.WhyChooseTitle}>{t('why_choose_title')}</h2>
         <WhyChooseList items={whyChooseItems} />
-        <OrderBtn className={css.orderButton} />
+        <OrderBtn className={css.orderButtonWhyChoose} />
       </div>
     </section>
   );
