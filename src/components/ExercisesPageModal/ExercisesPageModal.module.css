@@ -1,0 +1,124 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 34, 34, 0.4);
+}
+
+.modalWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.modalContent {
+  position: relative;
+  background: #969693;
+  border-radius: 40px;
+  max-width: 554px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.closeButton {
+  width: fit-content;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 20.5px 25px;
+  background: var(--background-main-color);
+  border: 1px solid #00000033;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: var(--text-color-black);
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #969693;
+  border-radius: 40px;
+}
+
+.sliderWrapperLowWidth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 328px;
+  min-height: 328px;
+  padding: 20px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  background-color: #969693;
+}
+.sliderWrapperHighWidth {
+  display: none;
+}
+
+.textBlock {
+  background: linear-gradient(to bottom, #fff5f0, var(--background-main-color));
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1440px) {
+  .closeButton {
+    padding: 24px 96px;
+    font-size: 24px;
+  }
+  .modalContent {
+    max-width: 1403px;
+    max-height: 1388px;
+  }
+  .card {
+    flex-direction: row;
+    flex-grow: 1;
+    border-radius: 40px;
+    background-color: #969693;
+  }
+  .sliderWrapperLowWidth {
+    display: none;
+  }
+  .sliderWrapperHighWidth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 717px;
+    height: 100%;
+    border-radius: 40px 0px 0px 40px;
+  }
+  .textBlock {
+    width: 697px;
+    height: 100%;
+    border-radius: 0px 40px 40px 0px;
+    padding: 40px 61px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

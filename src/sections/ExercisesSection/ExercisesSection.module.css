@@ -1,0 +1,237 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+  margin: 48px 0 96px 0;
+  color: var(--text-color-black);
+}
+
+.card {
+  width: 328px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sliderWrapperLowWidth {
+  width: 328px;
+  padding: 20px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  background-color: rgba(150, 150, 147, 0.4);
+}
+.sliderWrapperHighWidth {
+  display: none;
+}
+
+.textBlock {
+  background: linear-gradient(to bottom, #fff5f0, var(--background-main-color));
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.WhyChooseContainer {
+  width: 328px;
+  margin-top: 96px;
+  color: var(--text-color-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.WhyChooseTitle {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.loaderBtn {
+  display: none;
+}
+.WhyChooseBreak {
+  display: block;
+}
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.orderButton {
+  border: 1px solid #00000033;
+  color: var(--text-color-black);
+  background: var(--background-main-color);
+  padding-left: 48px;
+  padding-right: 48px;
+}
+.howItWorksPartContainer {
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.howItWorksImgLowWidth {
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 328px;
+  min-height: 328px;
+  display: flex;
+}
+
+.howItWorksImgLowWidth::before {
+  content: '';
+  position: absolute;
+  right: 18px;
+  width: 328px;
+  height: 390px;
+  display: flex;
+  background: url('/images/Vector.png') no-repeat center / contain;
+  transform: rotate(10deg);
+  z-index: -1;
+}
+
+.howItWorksImglowWidth img {
+  z-index: 1;
+}
+.howItWorksImgHighWidth {
+  display: none;
+}
+.orderButtonHowItWork {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 1440px) {
+  .orderButtonHowItWork {
+    padding: 24px 96px;
+    font-size: 24px;
+    margin-top: 60px;
+  }
+  .howItWorksImgLowWidth {
+    display: none;
+  }
+  .howItWorksImgHighWidth {
+    position: relative;
+    display: flex;
+  }
+  .howItWorksImgHighWidth::before {
+    content: '';
+    position: absolute;
+    right: 60px;
+    top: -85px;
+    width: 550px;
+    height: 752px;
+    display: flex;
+    background: url('/images/Vector.png') no-repeat center / contain;
+    transform: rotate(5deg);
+    z-index: -1;
+  }
+  .howItWorksPartContainer {
+    margin-top: 150px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 76px;
+  }
+  .section {
+    width: 1408px;
+    padding: 0;
+    margin: 150px auto;
+  }
+  .card {
+    width: 1408px;
+    height: 790px;
+    flex-direction: row;
+  }
+  .sliderWrapper {
+    width: 717px;
+    height: 100%;
+    border-radius: 40px 0px 0px 40px;
+  }
+  .textBlock {
+    width: 697px;
+    height: 100%;
+    border-radius: 0px 40px 40px 0px;
+    padding: 40px 61px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sliderWrapperLowWidth {
+    display: none;
+  }
+  .sliderWrapperHighWidth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #969693;
+    min-width: 717px;
+    height: 100%;
+    border-radius: 40px 0px 0px 40px;
+  }
+  .title {
+    font-size: 36px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 15px;
+    line-height: 1.7;
+  }
+  .orderButton {
+    padding: 24px 96px;
+    font-size: 24px;
+  }
+  .orderButtonWhyChoose {
+    padding: 24px 96px;
+    font-size: 24px;
+  }
+  .loaderBtn {
+    display: flex;
+    margin-bottom: 0;
+    background: none;
+    padding: 0;
+  }
+  .buttonsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+  .WhyChooseContainer {
+    width: 1410px;
+    margin-top: 150px;
+    align-items: center;
+    padding: 0;
+  }
+  .WhyChooseTitle {
+    font-size: 64px;
+    color: var(--text-color-blue);
+    margin-bottom: 80px;
+  }
+  .WhyChooseBreak {
+    display: none;
+  }
+  .orderButton {
+    padding: 24px 96px;
+    font-size: 24px;
+  }
+}

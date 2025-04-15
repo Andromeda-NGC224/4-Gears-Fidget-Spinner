@@ -66,6 +66,12 @@
   "why_choose_5": "Spoľahlivý mechanizmus",
   "why_choose_6": "Kompaktná veľkosť",
 
+  "howItWorksItems_title": "Ako to funguje",
+  "howItWorksItems_1": "Jednoduché kroky",
+  "howItWorksItems_2": "Získajte 4-rýchlostnú rotačku",
+  "howItWorksItems_3": "Naskenujte QR kód pre prístup k cvičeniam",
+  "howItWorksItems_4": "Cvičte 10 minút denne a už za dva týždne uvidíte pozitívne výsledky.",
+
   "section_title": "Recenzie",
   "review_1_author": "Zuzana Čierna",
   "review_1_position": "metodička predškolskej výchovy",
@@ -87,5 +93,25 @@
   "faq_6_answer": "Pre viditeľný pokrok stačí cvičiť 5+ krát do týždňa po 15 minút. Hlavné je pravidelnosť a pozitívny prístup dieťaťa.",
   "faq_7_question": "Kto je výrobcom?",
   "faq_8_question": "Čo je Memory Case?",
-  "faq_9_question": "Ako funguje online tréner?"
+  "faq_9_question": "Ako funguje online tréner?",
+  "exercises_page_title": "Zoznam cvikov – stačí kliknúť na cvik, ktorý vás zaujíma",
+
+  "roundabout_title": "Dúhový kolotoč",
+  "roundabout_1": "Rozvíja: koncentráciu a kontrolu pohybu",
+  "roundabout_2": "5 – 7 minút",
+
+  "dancers_title": "Tanečníky prstami",
+  "dancers_1": "Rozvíjanie: jemnej motoriky a koordinácie prstov",
+  "dancers_2": "3 – 5 minút",
+
+  "combined_title": "Kombinované vybavenie",
+  "combined_1": "Rozvíjanie: medzihemisférická koordinácia a koordinácia rúk",
+  "combined_2": "5 – 7 minút",
+
+  "contril_title": "Vynútené ovládanie",
+  "control_1": "Vývoj: Hmatová citlivosť a vnímanie pohybov",
+  "control_2": "3 – 5 minút",
+
+  "start_btn": "Štart",
+  "to_main_page_btn": "Na hlavnú stránku"
 }

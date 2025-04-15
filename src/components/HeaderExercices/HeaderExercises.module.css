@@ -1,0 +1,111 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: var(--background-main-color);
+}
+
+.btnBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 23px;
+  background: linear-gradient(
+    to bottom,
+    var(--firstblue-color),
+    var(--secondblue-color)
+  );
+  color: var(--text-color-white);
+  border: none;
+  border-radius: 10.85px;
+  font-size: 10.85px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnBack:hover {
+  background: linear-gradient(135deg, #fdc1a2 0%, #f8aa89 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(83, 144, 236, 0.3);
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 120px;
+  height: 35px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logoText {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-color-black);
+}
+
+.slogan {
+  text-align: center;
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--text-color-black);
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.languageSwitcher {
+  display: flex;
+  gap: 8px;
+}
+
+.languageButton {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  background: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.languageButton:hover {
+  background-color: #fefefe;
+}
+
+@media screen and (min-width: 1440px) {
+  .buttonsContainer {
+    flex-direction: row;
+  }
+  .btnBack {
+    padding: 20px 68px;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+  .header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 35px 0;
+  }
+  .logoContainer {
+    gap: 0;
+    width: 220px;
+    height: 54px;
+  }
+  .logoText {
+    line-height: 1;
+    height: 38px;
+    font-size: 42px;
+  }
+  .slogan {
+    font-size: 16px;
+  }
+}
