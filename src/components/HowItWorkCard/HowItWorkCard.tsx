@@ -4,7 +4,6 @@ import css from './HowItWorkCard.module.css';
 import Image from 'next/image';
 import { IoIosArrowDroprightCircle } from 'react-icons/io';
 import { useTranslations } from 'next-intl';
-import { useState } from 'react';
 import ExercisesPageModal from '@/components/ExercisesPageModal/ExercisesPageModal';
 
 type Props = {
@@ -12,12 +11,23 @@ type Props = {
   imageSrc?: string;
   items: string[];
   btn?: boolean;
+  cardIndex: number;
+  onCardClick: (index: number) => void;
+  isModalOpen: boolean;
+  onCloseModal: () => void;
 };
 
-const HowItWorkCard = ({ title, imageSrc, items, btn }: Props) => {
+const HowItWorkCard = ({
+  title,
+  imageSrc,
+  items,
+  btn,
+  cardIndex,
+  onCardClick,
+  isModalOpen,
+  onCloseModal,
+}: Props) => {
   const t = useTranslations();
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className={css.card}>
@@ -42,13 +52,19 @@ const HowItWorkCard = ({ title, imageSrc, items, btn }: Props) => {
         ))}
 
         {btn && (
-          <button onClick={() => setIsModalOpen(true)} className={css.btnStart}>
+          <button
+            onClick={() => onCardClick(cardIndex)}
+            className={css.btnStart}
+          >
             {t('start_btn')}
           </button>
         )}
 
         {isModalOpen && (
-          <ExercisesPageModal onClose={() => setIsModalOpen(false)} />
+          <ExercisesPageModal
+            selectedIndex={cardIndex}
+            onClose={onCloseModal}
+          />
         )}
       </ul>
     </div>

@@ -108,10 +108,134 @@
   "combined_1": "Rozvíjanie: medzihemisférická koordinácia a koordinácia rúk",
   "combined_2": "5 – 7 minút",
 
-  "contril_title": "Vynútené ovládanie",
+  "control_title": "Vynútené ovládanie",
   "control_1": "Vývoj: Hmatová citlivosť a vnímanie pohybov",
   "control_2": "3 – 5 minút",
 
   "start_btn": "Štart",
-  "to_main_page_btn": "Na hlavnú stránku"
+  "btn_back": "Späť",
+  "to_main_page_btn": "Na hlavnú stránku",
+
+  "rainbowCarousel": {
+    "title": "Dúhový kolotoč",
+    "time": "5-7 minút",
+    "preparation": {
+      "text": "Príprava:",
+      "step1": "Uchopte kotúč za stred palcom a ukazovákom",
+      "step2": "Vykonajte skúšobnú prevádzku",
+      "step3": "Dve minúty otáčajte odstredivkou, ako chcete"
+    },
+    "lightSpins": {
+      "text": "Jednoduché spustenie (2 minúty):",
+      "step1": "Spustite odstredivku veľmi ľahkým pohybom",
+      "step2": "Pokúste sa vynaložiť čo najmenšie úsilie na otáčanie",
+      "step3": "Opakujte 10-krát",
+      "step4": "Dôležité: každé spustenie by malo byť čo najjednoduchšie"
+    },
+    "mediumSpins": {
+      "text": "Priemerné spustenia (2 minúty):",
+      "step1": "Spustite odstredivku s miernym úsilím",
+      "step2": "Pokúste sa zakaždým vynaložiť rovnaké úsilie",
+      "step3": "Opakujte 10-krát",
+      "step4": "Dôležité: Udržujte rovnakú silu spúšťania"
+    },
+    "strongSpins": {
+      "text": "Silné štarty (3 minúty):",
+      "step1": "Spustite odstreďovač silným, ale kontrolovaným pohybom",
+      "step2": "Pre stabilitu držte odstredivku pevnejšie",
+      "step3": "Opakujte 10-krát",
+      "step4": "Dôležité: ovládajte silu, nedovoľte, aby sa rotor vyšmykol"
+    }
+  },
+
+  "fingersDancers": {
+    "title": "Dancing Fingers",
+    "time": "3-5 minút",
+    "preparation": {
+      "text": "Príprava:",
+      "step1": "Uchopte dva susedné prevody palcom a ukazovákom",
+      "step2": "Vykonajte skúšobnú rotáciu v oboch smeroch",
+      "step3": "Dve minúty otáčajte odstredivkou, ako chcete"
+    },
+    "slowSpins": {
+      "text": "Pomalé otáčky: (1,5 minúty):",
+      "step1": "Urobte 1 úplné otočenie za 5 sekúnd",
+      "step2": "Pauza 2 sekundy",
+      "step3": "Opakujte 10-krát",
+      "step4": "Udržiavajte konštantnú rýchlosť"
+    },
+    "directionChange": {
+      "text": "Zmena smeru (1,5 minúty):",
+      "step1": "1 otáčka v smere hodinových ručičiek (5 sekúnd)",
+      "step2": "Pauza 2 sekundy",
+      "step3": "1 otáčka proti smeru hodinových ručičiek (5 sekúnd)",
+      "step4": "Opakujte 10-krát"
+    },
+    "combinedSpins": {
+      "text": "Kombinované roztočenia (2 minúty):",
+      "step1": "2 otáčky v smere hodinových ručičiek (10 sekúnd)",
+      "step2": "Pauza 2 sekundy",
+      "step3": "2 otáčky proti smeru hodinových ručičiek (10 sekúnd)",
+      "step4": "Opakujte 8-krát"
+    }
+  },
+
+  "combinedTechnique": {
+    "title": "Kombinované strojové zariadenia",
+    "time": "5-7 minút",
+    "preparation": {
+      "text": "Príprava:",
+      "step1": "Začnite z klasickej polohy otáčania",
+      "step2": "Nacvičte si zachytenie na výstroji"
+    },
+    "seriesTransitions": {
+      "text": "Prechodová séria (2,5 minúty):",
+      "step1": "Urobte silný beh 5-10 krát",
+      "step2": "Počkajte, kým sa rotácia úplne nezastaví",
+      "step3": "Rýchlo uchopte prevody",
+      "step4": "Rukou urobte 2 celé otáčky",
+      "step5": "Opakujte 10-krát"
+    },
+    "reverseTransitions": {
+      "text": "Spätné prechody (2,5 minúty):",
+      "step1": "Začnite otočením ozubených kolies (2 otáčky)",
+      "step2": "Pauza 2 sekundy",
+      "step3": "Uvoľnenie a roztočenie zadarmo",
+      "step4": "Počkajte na úplné zastavenie",
+      "step5": "Opakujte 10-krát"
+    }
+  },
+
+  "control": {
+    "title": "Vynútené ovládanie",
+    "time": "5-7 minút",
+    "preparation": {
+      "text": "Príprava:",
+      "step1": "Začnite z klasickej polohy otáčania",
+      "step2": "Nacvičte si zachytenie na výstroji"
+    },
+    "firstSeries": {
+      "text": "Prvá epizóda (1,5 minúty):",
+      "step1": "Spustiť jemné spustenie",
+      "step2": "Počkajte na úplné zastavenie",
+      "step3": "Začnite dobre",
+      "step4": "Sekvenciu zopakujte 5-krát",
+      "step5": "Dôležité: Porovnajte silu štartov"
+    },
+    "secondSeries": {
+      "text": "Druhá epizóda (1,5 minúty):",
+      "step1": "Začnite dobre",
+      "step2": "Počkajte na úplné zastavenie",
+      "step3": "Spustiť jemné spustenie",
+      "step4": "Sekvenciu zopakujte 5-krát",
+      "step5": "Dôležité: Udržujte jasný kontrast medzi spustením"
+    },
+    "finalSeries": {
+      "text": "Záverečná séria (2 minúty):",
+      "step1": "Striedavý: ľahký - stredný - silný štart",
+      "step2": "Počkajte na úplné zastavenie medzi spustením",
+      "step3": "Sekvenciu zopakujte 5-krát",
+      "step4": "Dôležité: Cítiť rozdiel medzi tromi úrovňami sily"
+    }
+  }
 }

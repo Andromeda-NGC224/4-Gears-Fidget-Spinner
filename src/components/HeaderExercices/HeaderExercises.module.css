@@ -31,28 +31,21 @@
   box-shadow: 0 4px 12px rgba(83, 144, 236, 0.3);
 }
 
-.logoContainer {
+.logoContainerLowWidth {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  width: 120px;
-  height: 35px;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   text-decoration: none;
 }
-
-.logoText {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--text-color-black);
-}
-
-.slogan {
-  text-align: center;
-  font-size: 9px;
-  font-weight: 600;
-  color: var(--text-color-black);
+.logoContainerHighWidth {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .buttonsContainer {
@@ -95,17 +88,10 @@
     margin: 0 auto;
     padding: 35px 0;
   }
-  .logoContainer {
-    gap: 0;
-    width: 220px;
-    height: 54px;
+  .logoContainerHighWidth {
+    display: flex;
   }
-  .logoText {
-    line-height: 1;
-    height: 38px;
-    font-size: 42px;
-  }
-  .slogan {
-    font-size: 16px;
+  .logoContainerLowWidth {
+    display: none;
   }
 }

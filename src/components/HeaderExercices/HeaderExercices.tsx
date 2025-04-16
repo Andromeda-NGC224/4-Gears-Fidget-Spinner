@@ -9,6 +9,7 @@ import css from './HeaderExercises.module.css';
 import OrderBtn from '@/components/OrderBtn/OrderBtn';
 
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export interface HeaderProps {
   children?: React.ReactNode;
@@ -19,9 +20,22 @@ export default function HeaderExercises() {
 
   return (
     <header className={css.header}>
-      <Link href="/" className={css.logoContainer}>
-        <h1 className={css.logoText}>FLEXIFUN</h1>
-        <p className={css.slogan}>EXPLORE - PLAY - LEARN</p>
+      <Link href="/" className={css.logoContainerLowWidth}>
+        <Image
+          width={116}
+          height={35}
+          src={'/images/logoSmall.png'}
+          alt="logo"
+        ></Image>
+      </Link>
+
+      <Link href="/" className={css.logoContainerHighWidth}>
+        <Image
+          width={220}
+          height={64}
+          src={'/images/logo.png'}
+          alt="logo"
+        ></Image>
       </Link>
 
       <div className={css.buttonsContainer}>

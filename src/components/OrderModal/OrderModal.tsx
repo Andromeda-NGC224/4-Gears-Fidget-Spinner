@@ -1,14 +1,20 @@
-import { useEffect } from 'react';
+'use client';
+
+import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import css from './OrderModal.module.css';
 import { XMarkIcon } from '@heroicons/react/24/outline';
+import { BsFillPlusCircleFill, BsFillDashCircleFill } from 'react-icons/bs';
 
 type OrderModalProps = {
   onClose: () => void;
 };
 
 const OrderModal = ({ onClose }: OrderModalProps) => {
+  const [quantity, setQuantity] = useState(1);
+  const pricePerSet = 1320;
+
   const { register, handleSubmit, reset } = useForm();
 
   useEffect(() => {
@@ -93,6 +99,41 @@ const OrderModal = ({ onClose }: OrderModalProps) => {
               </label>
             </div>
 
+            <div className={css.quantitySelector}>
+              <div className={css.quantityLabel}>Кількість наборів</div>
+              <div className={css.quantityControls}>
+                <button
+                  type="button"
+                  className={css.quantityButton}
+                  onClick={() => setQuantity((prev) => Math.max(1, prev - 1))}
+                  aria-label="Зменшити кількість"
+                >
+                  <div className={css.quantityIcon}>
+                    <BsFillDashCircleFill size={24} />
+                  </div>
+                </button>
+                <span className={css.quantityValue}>{quantity}</span>
+                <button
+                  type="button"
+                  className={css.quantityButton}
+                  onClick={() => setQuantity((prev) => prev + 1)}
+                  aria-label="Збільшити кількість"
+                >
+                  <div className={css.quantityIcon}>
+                    <BsFillPlusCircleFill size={24} />
+                  </div>
+                </button>
+                <span className={css.quantityTotal}>
+                  = {quantity * pricePerSet} ₴
+                </span>
+              </div>
+              <input
+                {...register('quantity', { valueAsNumber: true })}
+                type="hidden"
+                value={quantity}
+              />
+            </div>
+
             <fieldset className={css.contactMethods}>
               <legend className={css.legend}>Спосіб зв'язку</legend>
               {['Telegram', 'WhatsApp', 'Viber'].map((method) => (
@@ -113,7 +154,6 @@ const OrderModal = ({ onClose }: OrderModalProps) => {
                 <input
                   {...register('phoneNumber', {
                     required: true,
-                    pattern: /^\S+@\S+$/i,
                   })}
                   id="phoneNumber"
                   type="phoneNumber"

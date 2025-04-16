@@ -1,10 +1,21 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import css from './ExercisesPageSection.module.css';
 import HowItWorkCard from '@/components/HowItWorkCard/HowItWorkCard';
 
 const ExercisesPageSection = () => {
   const t = useTranslations();
+  const [activeModalIndex, setActiveModalIndex] = useState<number | null>(null);
+
+  const handleCardClick = (index: number) => {
+    setActiveModalIndex(index);
+  };
+
+  const handleCloseModal = () => {
+    setActiveModalIndex(null);
+  };
 
   const cardsData = [
     {
@@ -38,13 +49,18 @@ const ExercisesPageSection = () => {
       <h2 className={css.title}>{t('exercises_page_title')}</h2>
       <div className={css.cardsContainer}>
         {cardsData.map((card, index) => (
-          <HowItWorkCard
-            key={index}
-            title={t(card.titleKey)}
-            imageSrc={card.imageSrc}
-            items={card.itemsKeys.map((itemKey) => t(itemKey))}
-            btn={card.btn}
-          />
+          <div key={index}>
+            <HowItWorkCard
+              title={t(card.titleKey)}
+              imageSrc={card.imageSrc}
+              items={card.itemsKeys.map((itemKey) => t(itemKey))}
+              btn={card.btn}
+              cardIndex={index}
+              onCardClick={handleCardClick}
+              isModalOpen={activeModalIndex === index}
+              onCloseModal={handleCloseModal}
+            />
+          </div>
         ))}
       </div>
     </section>

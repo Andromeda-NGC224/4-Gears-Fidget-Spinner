@@ -1,0 +1,51 @@
+.card {
+  color: var(--text-color-black);
+}
+.header {
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-color-black);
+}
+
+.time {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.stepsList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.stepHeader {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.substepItem {
+  display: flex;
+  gap: 8px;
+}
+.stepCounter {
+  margin-right: 4px;
+}
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  .time {
+    font-size: 24px;
+  }
+  .stepsList {
+    font-size: 24px;
+  }
+}

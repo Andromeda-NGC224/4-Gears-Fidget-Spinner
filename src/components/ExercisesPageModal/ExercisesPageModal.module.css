@@ -21,8 +21,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 95vh;
   padding: 20px;
+  overflow-y: auto;
 }
 
 .modalContent {
@@ -32,6 +33,7 @@
   max-width: 554px;
   width: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 95vh;
 }
 
 .closeButton {
@@ -78,12 +80,14 @@
 }
 
 .textBlock {
+  width: 100%;
   background: linear-gradient(to bottom, #fff5f0, var(--background-main-color));
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   padding: 32px 24px;
   display: flex;
   flex-direction: column;
+  gap: 48px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -93,7 +97,6 @@
   }
   .modalContent {
     max-width: 1403px;
-    max-height: 1388px;
   }
   .card {
     flex-direction: row;

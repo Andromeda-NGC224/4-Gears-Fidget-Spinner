@@ -3,6 +3,8 @@ import css from './Footer.module.css';
 import SmoothScrollLink from '../SmoothScrollLink/SmoothScrollLink';
 import OrderBtn from '@/components/OrderBtn/OrderBtn';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   const t = useTranslations();
@@ -10,10 +12,23 @@ export default function Footer() {
     <footer className={css.footer}>
       <div className={css.content}>
         <div className={css.logoAndLinks}>
-          <div className={css.logoSection}>
-            <h2 className={css.logo}>FLEXIFUN</h2>
-            <p className={css.slogan}>EXPLORE – PLAY – LEARN</p>
-          </div>
+          <Link href="/" className={css.logoContainerLowWidth}>
+            <Image
+              width={202}
+              height={60}
+              src={'/images/logoWhite.png'}
+              alt="logo"
+            ></Image>
+          </Link>
+
+          <Link href="/" className={css.logoContainerHighWidth}>
+            <Image
+              width={220}
+              height={65}
+              src={'/images/logoWhite.png'}
+              alt="logo"
+            ></Image>
+          </Link>
 
           <div className={css.linksColumn}>
             <nav className={css.linksList}>
@@ -38,7 +53,7 @@ export default function Footer() {
         <div className={css.agreementAndOrder}>
           <p className={css.linksTitle}>{t('user_agreement')}</p>
 
-          <OrderBtn className={css.orderButton} />
+          <OrderBtn className={css.orderButtonFooter} />
         </div>
       </div>
     </footer>

@@ -6,6 +6,8 @@ import css from './BurgerMenuOverlay.module.css';
 import SmoothScrollLink from '../SmoothScrollLink/SmoothScrollLink';
 import OrderBtn from '../OrderBtn/OrderBtn';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import Image from 'next/image';
 
 interface Props {
   onClose: () => void;
@@ -16,10 +18,15 @@ const BurgerMenuOverlay = ({ onClose }: Props) => {
   return (
     <div className={css.overlay}>
       <div className={css.logoBtnContainer}>
-        <div className={css.logoSection}>
-          <h2 className={css.logo}>FLEXIFUN</h2>
-          <p className={css.slogan}>EXPLORE – PLAY – LEARN</p>
-        </div>
+        <Link href="/" className={css.logoContainerLowWidth}>
+          <Image
+            width={116}
+            height={35}
+            src={'/images/logoWhite.png'}
+            alt="logo"
+          ></Image>
+        </Link>
+
         <button className={css.closeBtn} onClick={onClose}>
           <TfiClose size={16} color="#ffffff" />
         </button>
@@ -48,7 +55,7 @@ const BurgerMenuOverlay = ({ onClose }: Props) => {
 
       <OrderBtn
         style={{
-          color: '#5390ec',
+          color: '#ff9466',
           padding: '18px 40px',
           background: '#ffffff',
           alignSelf: 'flex-start',
