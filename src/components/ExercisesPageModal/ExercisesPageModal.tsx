@@ -187,10 +187,6 @@ const ExercisesPageModal = ({ onClose, selectedIndex }: OrderModalProps) => {
     },
   ];
 
-  const selectedExercise = exercises[selectedIndex];
-
-  if (!selectedExercise) return null;
-
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
@@ -204,6 +200,10 @@ const ExercisesPageModal = ({ onClose, selectedIndex }: OrderModalProps) => {
       document.removeEventListener('keydown', handleKeyDown);
     };
   }, [onClose]);
+
+  const selectedExercise = exercises[selectedIndex];
+
+  if (!selectedExercise) return null;
 
   return (
     <div className={css.modalContainer}>

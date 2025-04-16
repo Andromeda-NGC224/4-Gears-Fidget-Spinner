@@ -1,7 +1,4 @@
 import React from 'react';
-
-import { IoCheckmarkCircleSharp } from 'react-icons/io5';
-import ImageSlider from '@/components/ImageSlider/ImageSlider';
 import css from './GeometrySection.module.css';
 import OrderBtn from '@/components/OrderBtn/OrderBtn';
 import { useTranslations } from 'next-intl';

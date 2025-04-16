@@ -1,12 +1,8 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { RxHamburgerMenu } from 'react-icons/rx';
 import LanguageToggle from '../LanguageToggle/LanguageToggle';
-import BurgerMenuOverlay from '../BurgerMenuOverlay/BurgerMenuOverlay';
-
 import css from './HeaderExercises.module.css';
-import OrderBtn from '@/components/OrderBtn/OrderBtn';
 
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';

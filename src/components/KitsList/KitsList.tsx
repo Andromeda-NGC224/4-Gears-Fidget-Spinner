@@ -1,8 +1,5 @@
-import Image from 'next/image';
-
 import css from './KitsList.module.css';
 import { useTranslations } from 'next-intl';
-import { div } from 'framer-motion/client';
 
 const KitsList = () => {
   const t = useTranslations();
