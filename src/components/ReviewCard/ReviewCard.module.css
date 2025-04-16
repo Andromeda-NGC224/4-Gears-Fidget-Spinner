@@ -3,6 +3,7 @@
   width: 328px;
   border-radius: 12px;
   box-shadow: 0 12px 12px rgba(124, 122, 151, 0.15);
+  height: fit-content;
 }
 
 .person {
@@ -14,7 +15,7 @@
   border-top-right-radius: 24px;
   font-weight: 600;
   font-size: 16px;
-  padding: 16px 49.5px;
+  padding: 16px 24px 15px 49.5px;
   top: 300px;
 }
 .person h4 {
@@ -27,6 +28,7 @@
   font-weight: 400;
   padding: 67.5px 24px 17.5px 24px;
 }
+
 .imageLowWidth {
   display: block;
 }
@@ -46,13 +48,13 @@
     display: block;
   }
   .person {
-    width: 459px;
+    width: 460px;
     top: 390px;
     padding: 24px 44.5px;
     font-size: 24px;
   }
   .text {
     font-size: 20px;
-    padding: 110.5px 44.5px 32px 44.5px;
+    padding: 80px 44.5px 32px 44.5px;
   }
 }

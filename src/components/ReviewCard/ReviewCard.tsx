@@ -25,7 +25,7 @@ const ReviewCard = ({ author, position, text, imageSrc }: ReviewCardProps) => {
           src={imageSrc}
           alt={author}
           width={459}
-          height={413}
+          height={438}
         />
         <div className={css.person}>
           <h4 className={css.author}>{author}</h4>

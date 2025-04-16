@@ -10,31 +10,31 @@ const FaqSection = () => {
   const t = useTranslations();
 
   const faqItemsLowWidth = [
-    { question: t('faq_1_question') },
-    { question: t('faq_2_question') },
-    { question: t('faq_3_question') },
-    { question: t('faq_4_question') },
-    { question: t('faq_5_question') },
+    { question: t('faq_1_question'), answer: t('faq_1_answer') },
+    { question: t('faq_2_question'), answer: t('faq_2_answer') },
+    { question: t('faq_3_question'), answer: t('faq_3_answer') },
+    { question: t('faq_4_question'), answer: t('faq_4_answer') },
+    { question: t('faq_5_question'), answer: t('faq_5_answer') },
     {
       question: t('faq_6_question'),
       answer: t('faq_6_answer'),
     },
-    { question: t('faq_7_question') },
+    { question: t('faq_7_question'), answer: t('faq_7_answer') },
   ];
 
   const faqItemsHighWidth = [
-    { question: t('faq_8_question') },
-    { question: t('faq_9_question') },
-    { question: t('faq_1_question') },
-    { question: t('faq_2_question') },
-    { question: t('faq_3_question') },
-    { question: t('faq_4_question') },
-    { question: t('faq_5_question') },
+    { question: t('faq_1_question'), answer: t('faq_1_answer') },
+    { question: t('faq_2_question'), answer: t('faq_2_answer') },
+    { question: t('faq_3_question'), answer: t('faq_3_answer') },
+    { question: t('faq_4_question'), answer: t('faq_4_answer') },
+    { question: t('faq_5_question'), answer: t('faq_5_answer') },
     {
       question: t('faq_6_question'),
       answer: t('faq_6_answer'),
     },
-    { question: t('faq_7_question') },
+    { question: t('faq_7_question'), answer: t('faq_7_answer') },
+    { question: t('faq_8_question'), answer: t('faq_8_answer') },
+    { question: t('faq_9_question'), answer: t('faq_9_answer') },
   ];
 
   return (
